@@ -15,36 +15,44 @@ thomas-durand:
   avatar: /images/authors/thomas-durand.webp
   linkedinUrl: ""
   jobTitle:
-    fr: Redacteur en chef & analyste tech
-    en: Editor-in-Chief & tech analyst
+    fr: Rédacteur, logiciels et outils numériques
+    en: Writer, software and digital tools
   role:
-    fr: Redacteur en chef & analyste tech
-    en: Editor-in-Chief & tech analyst
+    fr: Logiciels, IA et outils numériques
+    en: Software, AI and digital tools
   bio:
-    fr: "Thomas Durand est redacteur en chef. Passionne de technologie, il teste et compare les solutions numeriques pour aider les professionnels et particuliers a faire les bons choix."
-    en: "Thomas Durand is Editor-in-Chief. Passionate about technology, he tests and compares digital solutions to help professionals and individuals make the right choices."
+    fr: "Thomas Durand signe les articles de Club Digital consacrés aux logiciels et aux outils numériques des entreprises : CRM, intelligence artificielle, automatisation, cybersécurité, hébergement, paie et outils de collaboration. Ses articles expliquent le fonctionnement des outils et les critères pour les choisir, à partir des informations publiées par les éditeurs et des sources publiques citées dans chaque article."
+    en: "Thomas Durand writes the Club Digital articles on business software and digital tools: CRM, artificial intelligence, automation, cybersecurity, hosting, payroll and collaboration tools. His articles explain how the tools work and how to choose them, based on information published by vendors and on the public sources cited in each article."
   expertise:
-    - SaaS
-    - Cloud Computing
-    - Cybersecurite
-    - Outils de productivite
+    - CRM
     - Intelligence artificielle
-    - Materiel informatique
+    - Automatisation
+    - Cybersécurité
+    - Hébergement et cloud
+    - Logiciels de paie
+    - Outils de collaboration
   topics:
     - tech
     - technologie
     - saas
     - logiciel
+    - crm
+    - marketing
+    - automatisation
+    - no-code
     - cloud
+    - hebergement
     - cybersecurite
     - securite informatique
     - ia
     - intelligence artificielle
+    - paie
+    - sirh
+    - rh
     - productivite
+    - collaboration
     - outils pro
     - b2b
-    - informatique
-    - hardware
 
 magalie-ergoz:
   id: magalie-ergoz
@@ -53,18 +61,18 @@ magalie-ergoz:
   avatar: /images/authors/magalie-ergoz.webp
   linkedinUrl: ""
   jobTitle:
-    fr: Blogueuse mode & beaute
+    fr: Blogueuse mode & beauté
     en: Fashion & beauty blogger
   role:
-    fr: Specialiste mode & beaute
+    fr: Spécialiste mode & beauté
     en: Fashion & beauty specialist
   bio:
-    fr: "Magalie Ergoz est blogueuse specialisee en mode et beaute. Elle teste et compare les marques pour aider ses lectrices et lecteurs a trouver les meilleurs produits au juste prix."
+    fr: "Magalie Ergoz est blogueuse spécialisée en mode et beauté. Elle teste et compare les marques pour aider ses lectrices et lecteurs à trouver les meilleurs produits au juste prix."
     en: "Magalie Ergoz is a fashion and beauty blogger. She tests and compares brands to help her readers find the best products at the right price."
   expertise:
     - Mode
-    - Beaute
-    - Cosmetiques
+    - Beauté
+    - Cosmétiques
     - Accessoires
     - Skincare
     - Parfums
@@ -88,20 +96,20 @@ claire-beaumont:
   avatar: /images/authors/claire-beaumont.webp
   linkedinUrl: ""
   jobTitle:
-    fr: Architecte d'interieur & blogueuse deco
+    fr: Architecte d'intérieur & blogueuse déco
     en: Interior designer & home blogger
   role:
-    fr: Experte habitat & renovation
+    fr: Experte habitat & rénovation
     en: Home & renovation expert
   bio:
-    fr: "Claire Beaumont est architecte d'interieur de formation et blogueuse depuis plus de 10 ans. Elle teste et compare outils, materiaux et prestataires pour aider particuliers et bricoleurs a reussir leurs projets habitat."
+    fr: "Claire Beaumont est architecte d'intérieur de formation et blogueuse depuis plus de 10 ans. Elle teste et compare outils, matériaux et prestataires pour aider particuliers et bricoleurs à réussir leurs projets habitat."
     en: "Claire Beaumont is a trained interior designer and has been blogging for over 10 years. She tests and compares tools, materials and service providers to help homeowners and DIYers succeed in their home projects."
   expertise:
-    - Renovation
-    - Decoration interieure
+    - Rénovation
+    - Décoration intérieure
     - Bricolage
-    - Amenagement exterieur
-    - Materiaux de construction
+    - Aménagement extérieur
+    - Matériaux de construction
     - Mobilier
   topics:
     - maison
@@ -126,19 +134,19 @@ laura-verdier:
   avatar: /images/authors/laura-verdier.webp
   linkedinUrl: ""
   jobTitle:
-    fr: Journaliste sante & bien-etre
+    fr: Journaliste santé & bien-être
     en: Health & wellness journalist
   role:
-    fr: Specialiste nutrition & bien-etre
+    fr: Spécialiste nutrition & bien-être
     en: Nutrition & wellness specialist
   bio:
-    fr: "Laura Verdier est journaliste specialisee en sante, nutrition et bien-etre depuis 8 ans. Elle decortique les marques, les etudes et les tendances pour offrir a ses lecteurs une information fiable et accessible."
+    fr: "Laura Verdier est journaliste spécialisée en santé, nutrition et bien-être depuis 8 ans. Elle décortique les marques, les études et les tendances pour offrir à ses lecteurs une information fiable et accessible."
     en: "Laura Verdier has been a journalist specializing in health, nutrition, and wellness for 8 years. She dissects brands, studies, and trends to provide her readers with reliable and accessible information."
   expertise:
     - Nutrition
-    - Bien-etre
-    - Complements alimentaires
-    - Medecine douce
+    - Bien-être
+    - Compléments alimentaires
+    - Médecine douce
     - Fitness
     - Sommeil
   topics:
@@ -164,17 +172,17 @@ kevin-moreau:
   avatar: /images/authors/kevin-moreau.webp
   linkedinUrl: ""
   jobTitle:
-    fr: Journaliste auto & mobilite
+    fr: Journaliste auto & mobilité
     en: Auto & mobility journalist
   role:
-    fr: Specialiste transport & mobilite
+    fr: Spécialiste transport & mobilité
     en: Transport & mobility specialist
   bio:
-    fr: "Kevin Moreau couvre l'actualite automobile et des nouvelles mobilites depuis 12 ans. Il teste vehicules, solutions de transport et services de voyage pour guider les lecteurs dans leurs choix."
+    fr: "Kevin Moreau couvre l'actualité automobile et des nouvelles mobilités depuis 12 ans. Il teste véhicules, solutions de transport et services de voyage pour guider les lecteurs dans leurs choix."
     en: "Kevin Moreau has covered automotive news and new mobility for 12 years. He tests vehicles, transport solutions and travel services to guide readers in their choices."
   expertise:
     - Automobile
-    - Mobilite electrique
+    - Mobilité électrique
     - Transport urbain
     - Voyage
     - Train
@@ -203,35 +211,31 @@ sophie-martin:
   avatar: /images/authors/sophie-martin.webp
   linkedinUrl: ""
   jobTitle:
-    fr: Journaliste finance & patrimoine
-    en: Finance & wealth journalist
+    fr: Rédactrice, facturation et comptabilité
+    en: Writer, invoicing and accounting
   role:
-    fr: Specialiste epargne & investissement
-    en: Savings & investment specialist
+    fr: Facturation et comptabilité
+    en: Invoicing and accounting
   bio:
-    fr: "Sophie Martin est journaliste financiere independante depuis 10 ans. Elle analyse et compare produits d'epargne, solutions d'investissement et strategies patrimoniales pour democratiser la finance personnelle."
-    en: "Sophie Martin has been an independent financial journalist for 10 years. She analyzes and compares savings products, investment solutions and wealth strategies to democratize personal finance."
+    fr: "Sophie Martin signe les articles de Club Digital consacrés à la facturation et à la comptabilité des entreprises : logiciels de facturation, devis, facture électronique, outils comptables et suivi de trésorerie. Ses articles expliquent les fonctions des outils et les points à vérifier avant de choisir, à partir des informations publiées par les éditeurs et des sources publiques citées dans chaque article."
+    en: "Sophie Martin writes the Club Digital articles on business invoicing and accounting: invoicing software, quotes, e-invoicing, accounting tools and cash flow tracking. Her articles explain what the tools do and what to check before choosing, based on information published by vendors and on the public sources cited in each article."
   expertise:
-    - Epargne
-    - Investissement
-    - Immobilier locatif
-    - Fiscalite
-    - Assurance vie
-    - Bourse
+    - Logiciels de facturation
+    - Facture électronique
+    - Logiciels de comptabilité
+    - Devis et relances
+    - Trésorerie
   topics:
-    - finance
-    - placement
-    - epargne
-    - investissement
-    - bourse
-    - immobilier locatif
-    - scpi
-    - assurance vie
-    - pel
-    - livret
-    - fiscalite
-    - impot
-    - patrimoine
-    - retraite
-    - credit
-    - banque
+    - facturation
+    - facture
+    - facture electronique
+    - devis
+    - relance
+    - impayes
+    - comptabilite
+    - logiciel comptable
+    - expert-comptable
+    - tresorerie
+    - rapprochement bancaire
+    - tva
+    - gestion financiere

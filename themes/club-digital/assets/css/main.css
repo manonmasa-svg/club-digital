@@ -2216,3 +2216,7 @@ html { scroll-padding-top: calc(var(--header-h) + 1.25rem); }
     .article-content > blockquote:first-child { padding: 1rem 1rem 1rem 1.1rem; margin-left: 0; margin-right: 0; }
     .article-content > blockquote:first-child ol, .article-content > blockquote:first-child ul { padding-left: 1.2rem; }
 }
+
+/* FAQ de l accueil */
+.home-faq-list { max-width: 860px; }
+.home-faq-list details p { margin: 0; padding-top: 0.25rem; }

@@ -91,4 +91,10 @@
 {{ else if .IsHome }}
 <!-- JSON-LD : WebSite (accueil) -->
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "description" .Site.Params.description "url" .Site.Home.Permalink "publisher" (dict "@id" $orgId) "inLanguage" (.Site.Language.Locale | default $lang) | jsonify | safeJS }}</script>
+{{ with .Params.faq }}
+<!-- JSON-LD : FAQPage de l'accueil (frontmatter de content/_index.md) -->
+{{ $qs := slice }}
+{{ range . }}{{ $qs = $qs | append (dict "@type" "Question" "name" .question "acceptedAnswer" (dict "@type" "Answer" "text" .answer)) }}{{ end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $qs | jsonify | safeJS }}</script>
+{{ end }}
 {{ end }}

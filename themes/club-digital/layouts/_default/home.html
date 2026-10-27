@@ -138,4 +138,24 @@
     </div>
 </section>
 
+
+{{/* FAQ de l accueil : questions dans le frontmatter de content/_index.md (FR) et content/en/_index.md (EN), balisage FAQPage genere par seo-head.html */}}
+{{ with .Params.faq }}
+<section class="home-section home-faq" aria-labelledby="home-faq-title">
+    <div class="container">
+        <div class="section-head">
+            <h2 id="home-faq-title">{{ T "faqTitle" }}</h2>
+        </div>
+        <div class="article-content home-faq-list">
+            {{ range . }}
+            <details>
+                <summary>{{ .question }}</summary>
+                <p>{{ .answer }}</p>
+            </details>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
 {{ end }}
