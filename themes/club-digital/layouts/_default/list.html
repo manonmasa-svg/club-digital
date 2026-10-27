@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ $pages := .Pages.ByDate.Reverse }}
+{{ if eq .Kind "taxonomy" }}{{ $pages = .Pages.ByWeight }}{{ end }}
+
+<section class="list-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="list-description">{{ . }}</p>{{ end }}
+        {{ if ne .Kind "taxonomy" }}
+        {{ $n := len .Pages }}
+        <span class="list-count">{{ $n }} {{ if gt $n 1 }}{{ T "articleOther" }}{{ else }}{{ T "articleOne" }}{{ end }}</span>
+        {{ end }}
+    </div>
+</section>
+
+<section class="list-content">
+    <div class="container">
+        {{ with .Content }}<div class="prose article-content">{{ . }}</div>{{ end }}
+        {{ if eq .Kind "taxonomy" }}
+        <div class="grid-categories">
+            {{ range $pages }}
+            <a href="{{ .RelPermalink }}" class="category-card">
+                <h3>{{ .Title }}</h3>
+                {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+            </a>
+            {{ end }}
+        </div>
+        {{ else }}
+        <div class="grid-articles">
+            {{ range $pages }}
+            {{ partial "card.html" . }}
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}

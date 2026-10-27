@@ -1,0 +1,24 @@
+# Club Digital
+
+> {{ site.Params.description }}
+
+Club Digital est un blog bilingue (français à la racine, anglais sous /en/) consacré aux logiciels, à l'intelligence artificielle et aux outils numériques utilisés par les entreprises. Les prix et fonctionnalités cités sont relevés sur les sites des éditeurs, avec la date du relevé.
+
+## Rubriques
+{{ range (where site.Pages "Kind" "term").ByWeight }}{{ if eq .Data.Plural "categories" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Params.summary }}{{ end }}{{ end }}
+
+## Articles
+{{ range where site.RegularPages "Section" "blog" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}{{ end }}
+
+## English version
+{{ range where (index hugo.Sites 1).RegularPages "Section" "blog" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}{{ end }}
+
+## Informations
+{{ with site.GetPage "/a-propos" }}
+- [{{ .Title }}]({{ .Permalink }}){{ end }}{{ with site.GetPage "/ligne-editoriale" }}
+- [{{ .Title }}]({{ .Permalink }}){{ end }}
+- [Sitemap]({{ "sitemap.xml" | absURL }})
+- [RSS]({{ site.Home.Permalink }}index.xml)

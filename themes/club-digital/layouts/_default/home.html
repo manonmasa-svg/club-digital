@@ -1,0 +1,74 @@
+{{ define "main" }}
+{{/* llms.txt genere a la racine depuis assets/llms.txt (version FR uniquement) */}}
+{{ if eq site.Language.Lang hugo.Sites.Default.Language.Lang }}
+{{ $llms := resources.Get "llms.txt" | resources.ExecuteAsTemplate "llms.txt" . }}
+{{ $llms.Publish }}
+{{ end }}
+{{ $articles := where .Site.RegularPages "Section" "blog" }}
+{{ $blog := site.GetPage "/blog" }}
+
+<section class="home-hero">
+    <div class="container">
+        <span class="kicker">{{ T "homeKicker" }}</span>
+        <h1>{{ T "homeH1a" }} <span class="hl">{{ T "homeH1b" }}</span></h1>
+        <p class="home-hero-lead">{{ .Site.Params.description }}</p>
+        <div class="home-hero-actions">
+            {{ with $blog }}<a href="{{ .RelPermalink }}" class="btn-primary">{{ T "homeCta" }}</a>{{ end }}
+            {{ with site.GetPage (cond (eq site.Language.Lang "en") "/editorial-policy" "/ligne-editoriale") }}<a href="{{ .RelPermalink }}" class="btn-outline btn-ghost">{{ T "homeCta2" }}</a>{{ end }}
+        </div>
+    </div>
+</section>
+
+{{ with $articles }}
+<section class="home-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{ T "latest" }}</h2>
+            {{ with $blog }}<a href="{{ .RelPermalink }}">{{ T "allArticles" }}</a>{{ end }}
+        </div>
+        <div class="grid-articles">
+            {{ range first 6 . }}
+            {{ partial "card.html" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<section class="home-section home-section-alt">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{ T "sectionsTitle" }}</h2>
+        </div>
+        <div class="grid-categories">
+            {{ range (where .Site.Pages "Kind" "term").ByWeight }}
+            {{ if eq .Data.Plural "categories" }}
+            {{ $n := len .Pages }}
+            <a href="{{ .RelPermalink }}" class="category-card">
+                <h3>{{ .Title }}</h3>
+                {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+                <span class="category-count">{{ $n }} {{ if gt $n 1 }}{{ T "articleOther" }}{{ else }}{{ T "articleOne" }}{{ end }}</span>
+            </a>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="home-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{ T "methodTitle" }}</h2>
+        </div>
+        <div class="grid-categories">
+            {{ range slice 1 2 3 }}
+            <div class="category-card">
+                <h3>{{ T (printf "method%dTitle" .) }}</h3>
+                <p>{{ T (printf "method%dText" .) }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

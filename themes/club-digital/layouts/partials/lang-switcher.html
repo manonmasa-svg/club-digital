@@ -1,0 +1,15 @@
+{{ $page := .page }}
+{{ if gt (len hugo.Sites) 1 }}
+<div class="{{ .class }}" role="group" aria-label="{{ T "langSwitch" }}">
+    {{ range hugo.Sites }}
+    {{ $lang := .Language.Lang }}
+    {{ if eq $lang $page.Site.Language.Lang }}
+    <span class="lang-current" aria-current="true">{{ upper $lang }}</span>
+    {{ else }}
+    {{ $target := .Home.RelPermalink }}
+    {{ range $page.Translations }}{{ if eq .Lang $lang }}{{ $target = .RelPermalink }}{{ end }}{{ end }}
+    <a href="{{ $target }}" class="lang-link" hreflang="{{ $lang }}" lang="{{ $lang }}">{{ upper $lang }}</a>
+    {{ end }}
+    {{ end }}
+</div>
+{{ end }}

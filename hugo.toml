@@ -1,0 +1,221 @@
+# Domaine club-digital.fr (domaine expire repris par Manon chez OVH, 27 octobre 2026).
+# En production, le workflow GitHub Actions remplace baseURL par l adresse GitHub Pages
+# (ou le domaine custom une fois configure dans les reglages Pages du depot).
+baseURL = "https://club-digital.fr/"
+title = "Club Digital"
+theme = "club-digital"
+
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
+removePathAccents = true
+enableRobotsTXT = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[languages]
+  [languages.fr]
+    locale = "fr-FR"
+    label = "Français"
+    weight = 1
+    title = "Club Digital"
+    [languages.fr.params]
+      description = "Le blog qui décrypte les logiciels, l'IA et les outils numériques : facturation, CRM, automatisation, cybersécurité et productivité."
+      tagline = "Logiciels, IA et outils numériques, décryptés"
+
+  [languages.en]
+    locale = "en-US"
+    label = "English"
+    weight = 2
+    title = "Club Digital"
+    [languages.en.params]
+      description = "The blog that breaks down software, AI and digital tools: invoicing, CRM, automation, cybersecurity and productivity."
+      tagline = "Software, AI and digital tools, explained"
+
+# Menu principal FR
+[[languages.fr.menus.main]]
+  name = "Facturation et Comptabilité"
+  pageRef = "/categories/facturation-et-comptabilité"
+  weight = 1
+[[languages.fr.menus.main]]
+  name = "CRM et Marketing"
+  pageRef = "/categories/crm-et-marketing"
+  weight = 2
+[[languages.fr.menus.main]]
+  name = "IA et Automatisation"
+  pageRef = "/categories/ia-et-automatisation"
+  weight = 3
+[[languages.fr.menus.main]]
+  name = "Cybersécurité"
+  pageRef = "/categories/cybersécurité"
+  weight = 4
+[[languages.fr.menus.main]]
+  name = "Cloud et Hébergement"
+  pageRef = "/categories/cloud-et-hébergement"
+  weight = 5
+[[languages.fr.menus.main]]
+  name = "RH et Paie"
+  pageRef = "/categories/rh-et-paie"
+  weight = 6
+[[languages.fr.menus.main]]
+  name = "Productivité et Collaboration"
+  pageRef = "/categories/productivité-et-collaboration"
+  weight = 7
+[[languages.fr.menus.main]]
+  name = "Le Blog"
+  pageRef = "/blog"
+  weight = 99
+
+[[languages.fr.menus.footer]]
+  name = "À propos"
+  pageRef = "/a-propos"
+  weight = 1
+[[languages.fr.menus.footer]]
+  name = "Ligne éditoriale"
+  pageRef = "/ligne-editoriale"
+  weight = 2
+[[languages.fr.menus.footer]]
+  name = "Contact"
+  pageRef = "/contact"
+  weight = 3
+
+[[languages.fr.menus.legal]]
+  name = "Mentions légales"
+  pageRef = "/mentions-legales"
+  weight = 1
+[[languages.fr.menus.legal]]
+  name = "Politique de confidentialité"
+  pageRef = "/politique-de-confidentialite"
+  weight = 2
+[[languages.fr.menus.legal]]
+  name = "Conditions d'utilisation"
+  pageRef = "/conditions-utilisation"
+  weight = 3
+[[languages.fr.menus.legal]]
+  name = "Cookies"
+  pageRef = "/cookies"
+  weight = 4
+[[languages.fr.menus.legal]]
+  name = "Plan du site"
+  pageRef = "/plan-du-site"
+  weight = 5
+
+# Menu principal EN
+[[languages.en.menus.main]]
+  name = "Invoicing and Accounting"
+  pageRef = "/categories/invoicing-and-accounting"
+  weight = 1
+[[languages.en.menus.main]]
+  name = "CRM and Marketing"
+  pageRef = "/categories/crm-and-marketing"
+  weight = 2
+[[languages.en.menus.main]]
+  name = "AI and Automation"
+  pageRef = "/categories/ai-and-automation"
+  weight = 3
+[[languages.en.menus.main]]
+  name = "Cybersecurity"
+  pageRef = "/categories/cybersecurity"
+  weight = 4
+[[languages.en.menus.main]]
+  name = "Cloud and Hosting"
+  pageRef = "/categories/cloud-and-hosting"
+  weight = 5
+[[languages.en.menus.main]]
+  name = "HR and Payroll"
+  pageRef = "/categories/hr-and-payroll"
+  weight = 6
+[[languages.en.menus.main]]
+  name = "Productivity and Collaboration"
+  pageRef = "/categories/productivity-and-collaboration"
+  weight = 7
+[[languages.en.menus.main]]
+  name = "The Blog"
+  pageRef = "/blog"
+  weight = 99
+
+[[languages.en.menus.footer]]
+  name = "About"
+  pageRef = "/about"
+  weight = 1
+[[languages.en.menus.footer]]
+  name = "Editorial policy"
+  pageRef = "/editorial-policy"
+  weight = 2
+[[languages.en.menus.footer]]
+  name = "Contact"
+  pageRef = "/contact"
+  weight = 3
+
+[[languages.en.menus.legal]]
+  name = "Legal notice"
+  pageRef = "/legal-notice"
+  weight = 1
+[[languages.en.menus.legal]]
+  name = "Privacy policy"
+  pageRef = "/privacy-policy"
+  weight = 2
+[[languages.en.menus.legal]]
+  name = "Terms of use"
+  pageRef = "/terms-of-use"
+  weight = 3
+[[languages.en.menus.legal]]
+  name = "Cookies"
+  pageRef = "/cookies"
+  weight = 4
+[[languages.en.menus.legal]]
+  name = "Site map"
+  pageRef = "/site-map"
+  weight = 5
+
+[params]
+  default_og_image = "/images/og-default.png"
+  logo = "/favicon-512.png"
+  founding_year = "2026"
+  # Adresse de contact : a renseigner une fois le domaine achete. Tant que le champ
+  # est vide, les pages affichent "adresse de contact en cours de creation".
+  contact_email = ""
+  expertise = ["Logiciels de gestion", "Facturation", "Comptabilité", "CRM", "Intelligence artificielle", "Automatisation", "Cybersécurité", "Cloud", "Paie", "Outils de productivité"]
+  og_locale_alternate = "en_US"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html", "rss"]
+
+[related]
+  includeNewer = true
+  threshold = 80
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = true
+  [markup.goldmark.renderer]
+    unsafe = true
+
+# Contenu FR a la racine de content/, contenu EN dans content/en/
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    files = ["! en/**"]
+    [module.mounts.sites.matrix]
+      languages = ["fr"]
+  [[module.mounts]]
+    source = "content/en"
+    target = "content"
+    [module.mounts.sites.matrix]
+      languages = ["en"]

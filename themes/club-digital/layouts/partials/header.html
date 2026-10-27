@@ -1,0 +1,43 @@
+<header class="site-header">
+    <div class="header-container">
+        <a href="{{ .Site.Home.RelPermalink }}" class="site-logo" aria-label="{{ .Site.Title }}, {{ T "home" }}" translate="no">Club Digital<span class="logo-dot" aria-hidden="true">.</span></a>
+
+        <div class="header-right">
+            {{ partial "lang-switcher.html" (dict "page" . "class" "lang-switcher") }}
+            <button class="menu-toggle" aria-label="{{ T "menu" }}" aria-expanded="false" aria-controls="nav-mobile">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="site-nav-bar">
+        <nav class="site-nav" aria-label="{{ T "navMain" }}">
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}" class="nav-link{{ if or ($.IsMenuCurrent "main" .) (eq $.RelPermalink .URL) }} active{{ end }}"{{ if eq $.RelPermalink .URL }} aria-current="page"{{ end }}>{{ .Name }}</a>
+            {{ end }}
+        </nav>
+    </div>
+
+    <nav class="nav-mobile" id="nav-mobile" aria-label="{{ T "navMobile" }}">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="nav-link-mobile">{{ .Name }}</a>
+        {{ end }}
+        {{ partial "lang-switcher.html" (dict "page" . "class" "lang-switcher-mobile") }}
+    </nav>
+</header>
+
+<script>
+(function() {
+    var toggle = document.querySelector('.menu-toggle');
+    var mobileNav = document.querySelector('.nav-mobile');
+    if (!toggle || !mobileNav) return;
+    function setOpen(open) {
+        mobileNav.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+    }
+    toggle.addEventListener('click', function() { setOpen(!mobileNav.classList.contains('open')); });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileNav.classList.contains('open')) { setOpen(false); toggle.focus(); }
+    });
+})();
+</script>

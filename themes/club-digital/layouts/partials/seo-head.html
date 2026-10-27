@@ -1,0 +1,94 @@
+{{ $lang := .Site.Language.Lang }}
+{{ $orgId := printf "%s#organization" (hugo.Sites.Default.Home.Permalink) }}
+{{ $description := .Description | default .Site.Params.description }}
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Hreflang : la page, ses traductions, et x-default vers la version francaise -->
+{{ if .IsTranslated }}
+<link rel="alternate" hreflang="{{ .Site.Language.Locale | default $lang }}" href="{{ .Permalink }}">
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Site.Language.Locale | default .Lang }}" href="{{ .Permalink }}">
+{{ end }}
+{{ $default := . }}
+{{ range .AllTranslations }}{{ if eq .Lang hugo.Sites.Default.Language.Lang }}{{ $default = . }}{{ end }}{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ $default.Permalink }}">
+{{ end }}
+
+<!-- Author -->
+{{ $author := dict }}
+{{ if .IsPage }}{{ with .Params.author }}{{ with index hugo.Data.authors . }}{{ $author = . }}{{ end }}{{ end }}{{ end }}
+{{ with $author.name }}<meta name="author" content="{{ . }}">{{ end }}
+
+<!-- Open Graph -->
+{{ $ogImage := .Site.Params.default_og_image }}
+{{ if .IsPage }}{{ with .Params.image }}{{ $ogImage = . }}{{ end }}{{ end }}
+<meta property="og:type" content="{{ if and .IsPage (eq .Section "blog") }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ replace (.Site.Language.Locale | default "fr-FR") "-" "_" }}">
+{{ range .Translations }}<meta property="og:locale:alternate" content="{{ replace (.Site.Language.Locale | default .Lang) "-" "_" }}">
+{{ end }}
+{{ with $ogImage }}
+<meta property="og:image" content="{{ . | absURL }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{{ end }}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{ with $ogImage }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
+
+<!-- Favicons -->
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="icon" href="{{ "favicon-48.png" | relURL }}" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+
+<!-- RSS -->
+{{ with .Site.Home.OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">{{ end }}
+
+<!-- JSON-LD : Organization (toutes les pages) -->
+{{ $org := dict "@context" "https://schema.org" "@type" "Organization" "@id" $orgId "name" .Site.Title "url" hugo.Sites.Default.Home.Permalink "description" .Site.Params.description }}
+{{ with .Site.Params.logo }}{{ $org = merge $org (dict "logo" (. | absURL)) }}{{ end }}
+{{ with .Site.Params.founding_year }}{{ $org = merge $org (dict "foundingDate" .) }}{{ end }}
+{{ with .Site.Params.expertise }}{{ $org = merge $org (dict "knowsAbout" .) }}{{ end }}
+<script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>
+
+{{ if and .IsPage (eq .Section "blog") }}
+<!-- JSON-LD : Article -->
+{{ $article := dict "@context" "https://schema.org" "@type" "Article" "headline" .Title "description" .Description "datePublished" (.Date.Format "2006-01-02") "dateModified" (.Lastmod.Format "2006-01-02") "inLanguage" (.Site.Language.Locale | default $lang) "wordCount" .WordCount "timeRequired" (printf "PT%dM" .ReadingTime) "publisher" (dict "@type" "Organization" "@id" $orgId "name" .Site.Title) "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink) "isPartOf" (dict "@type" "Blog" "name" .Site.Title "url" .Site.Home.Permalink) }}
+{{ with .Params.image }}{{ $article = merge $article (dict "image" (. | absURL)) }}{{ end }}
+{{ with $author }}
+{{ $p := dict "@type" (cond (eq .type "organization") "Organization" "Person") "name" .name "worksFor" (dict "@id" $orgId) }}
+{{ with .avatar }}{{ if fileExists (printf "static%s" .) }}{{ $p = merge $p (dict "image" (. | absURL)) }}{{ end }}{{ end }}
+{{ with index .jobTitle $lang }}{{ $p = merge $p (dict "jobTitle" .) }}{{ end }}
+{{ with index .bio $lang }}{{ $p = merge $p (dict "description" .) }}{{ end }}
+{{ with .expertise }}{{ $p = merge $p (dict "knowsAbout" .) }}{{ end }}
+{{ with .linkedinUrl }}{{ $p = merge $p (dict "sameAs" (slice .)) }}{{ end }}
+{{ $article = merge $article (dict "author" $p) }}
+{{ end }}
+<script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>
+
+<!-- JSON-LD : BreadcrumbList -->
+{{ $items := slice (dict "@type" "ListItem" "position" 1 "name" (T "home") "item" .Site.Home.Permalink) }}
+{{ with site.GetPage "/blog" }}{{ $items = $items | append (dict "@type" "ListItem" "position" 2 "name" (T "blog") "item" .Permalink) }}{{ end }}
+{{ with index (.GetTerms "categories") 0 }}{{ $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" .LinkTitle "item" .Permalink) }}{{ end }}
+{{ $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" .Title "item" .Permalink) }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items | jsonify | safeJS }}</script>
+
+{{ with .Params.faq }}
+<!-- JSON-LD : FAQPage (depuis le frontmatter) -->
+{{ $qs := slice }}
+{{ range . }}{{ $qs = $qs | append (dict "@type" "Question" "name" .question "acceptedAnswer" (dict "@type" "Answer" "text" .answer)) }}{{ end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $qs | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ else if .IsHome }}
+<!-- JSON-LD : WebSite (accueil) -->
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "description" .Site.Params.description "url" .Site.Home.Permalink "publisher" (dict "@id" $orgId) "inLanguage" (.Site.Language.Locale | default $lang) | jsonify | safeJS }}</script>
+{{ end }}

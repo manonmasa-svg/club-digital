@@ -1,0 +1,38 @@
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <p class="footer-title" translate="no">Club Digital<span class="logo-dot" aria-hidden="true">.</span></p>
+                <p>{{ .Site.Params.description }}</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label">{{ T "sections" }}</p>
+                <ul>
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label">{{ T "information" }}</p>
+                <nav aria-label="{{ T "navFooter" }}">
+                    <ul>
+                        {{ range .Site.Menus.footer }}
+                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{ end }}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; {{ now.Year }} <span translate="no">{{ .Site.Title }}</span>. {{ T "allRights" }}</p>
+            <nav class="footer-legal" aria-label="{{ T "navLegal" }}">
+                <ul>
+                    {{ range .Site.Menus.legal }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
