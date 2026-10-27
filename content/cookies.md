@@ -4,7 +4,7 @@ description: "Club Digital ne dépose aucun cookie ni traceur : pas de mesure d'
 translationKey: "cookies"
 ---
 
-<p class="page-updated">Dernière mise à jour : 18 octobre 2026.</p>
+<p class="page-updated">Dernière mise à jour : 27 octobre 2026.</p>
 
 ## Aucun cookie sur Club Digital
 
@@ -20,10 +20,9 @@ Selon la CNIL, qui présente les règles applicables sur sa page [Cookies et tra
 | Publicité | Aucune |
 | Boutons de réseaux sociaux | Aucun |
 | Vidéos, cartes ou contenus intégrés | Aucun |
-| Polices de caractères | Chargées depuis Google Fonts, sans cookie |
+| Polices de caractères | Hébergées sur le site lui-même |
 | Images | Hébergées sur le site lui-même |
 
-Le chargement des polices depuis Google Fonts transmet l'adresse IP du visiteur à Google, comme l'explique la [politique de confidentialité]({{< relref "politique-de-confidentialite.md" >}}).
 
 ## Les sites vers lesquels pointent les liens
 

@@ -26,7 +26,7 @@ Les noms de logiciels et de marques cités appartiennent à leurs propriétaires
 
 Le site ne propose ni création de compte ni formulaire. Aucune donnée personnelle n'est collectée par l'éditeur lors de la navigation. Les messages envoyés à l'adresse de contact sont utilisés uniquement pour y répondre.
 
-Les polices de caractères sont chargées depuis le service Google Fonts, et l'hébergeur peut enregistrer des données techniques de connexion, dont l'adresse IP, à des fins de sécurité. Le détail figure dans la [politique de confidentialité]({{< relref "politique-de-confidentialite.md" >}}) et sur la page [Cookies]({{< relref "cookies.md" >}}).
+L'hébergeur peut enregistrer des données techniques de connexion, dont l'adresse IP, à des fins de sécurité. Le détail figure dans la [politique de confidentialité]({{< relref "politique-de-confidentialite.md" >}}) et sur la page [Cookies]({{< relref "cookies.md" >}}).
 
 ## Responsabilité
 

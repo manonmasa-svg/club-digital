@@ -4,7 +4,7 @@ description: "Club Digital sets no cookies or trackers: no audience measurement,
 translationKey: "cookies"
 ---
 
-<p class="page-updated">Last updated: 18 October 2026.</p>
+<p class="page-updated">Last updated: 27 October 2026.</p>
 
 ## No cookies on Club Digital
 
@@ -20,10 +20,9 @@ According to the French data protection authority (CNIL), which sets out the app
 | Advertising | None |
 | Social media buttons | None |
 | Videos, maps or embedded content | None |
-| Fonts | Loaded from Google Fonts, without cookies |
+| Fonts | Hosted on the website itself |
 | Images | Hosted on the website itself |
 
-Loading fonts from Google Fonts sends the visitor's IP address to Google, as explained in the [privacy policy]({{< relref "privacy-policy.md" >}}).
 
 ## Websites the links point to
 

@@ -26,7 +26,7 @@ Software and brand names mentioned belong to their respective owners.
 
 The website offers no account creation and no form. The publisher collects no personal data while visitors browse. Messages sent to the contact address are used only to reply to them.
 
-Fonts are loaded from the Google Fonts service, and the host may record technical connection data, including the IP address, for security purposes. Details are given in the [privacy policy]({{< relref "privacy-policy.md" >}}) and on the [Cookies]({{< relref "cookies.md" >}}) page.
+The host may record technical connection data, including the IP address, for security purposes. Details are given in the [privacy policy]({{< relref "privacy-policy.md" >}}) and on the [Cookies]({{< relref "cookies.md" >}}) page.
 
 ## Liability
 

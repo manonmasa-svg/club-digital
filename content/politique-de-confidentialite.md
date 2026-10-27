@@ -4,7 +4,7 @@ description: "Politique de confidentialité de Club Digital : données traitées
 translationKey: "privacy"
 ---
 
-<p class="page-updated">Dernière mise à jour : 18 octobre 2026.</p>
+<p class="page-updated">Dernière mise à jour : 27 octobre 2026.</p>
 
 ## Responsable du traitement
 
@@ -31,7 +31,7 @@ Le site est hébergé par GitHub Pages, un service de GitHub, Inc. Comme tout h�
 
 ### Les polices de caractères
 
-Les polices de caractères du site sont chargées depuis le service Google Fonts. Pour les afficher, le navigateur se connecte aux serveurs de Google, qui reçoivent à cette occasion l'adresse IP du visiteur. Ce traitement relève de Google, qui le présente dans sa [politique de confidentialité](https://policies.google.com/privacy?hl=fr).
+Les polices de caractères du site sont hébergées sur le site lui-même. Leur affichage n'entraîne aucune connexion à un service tiers.
 
 ## Les liens vers d'autres sites
 

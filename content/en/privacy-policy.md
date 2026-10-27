@@ -4,7 +4,7 @@ description: "Club Digital privacy policy: data processed, hosting, fonts and in
 translationKey: "privacy"
 ---
 
-<p class="page-updated">Last updated: 18 October 2026.</p>
+<p class="page-updated">Last updated: 27 October 2026.</p>
 
 ## Data controller
 
@@ -31,7 +31,7 @@ The website is hosted by GitHub Pages, a service of GitHub, Inc. Like any host, 
 
 ### Fonts
 
-The website's fonts are loaded from the Google Fonts service. To display them, the browser connects to Google's servers, which receive the visitor's IP address in the process. This processing is Google's responsibility and is described in its [privacy policy](https://policies.google.com/privacy?hl=en).
+The website's fonts are hosted on the website itself. Displaying them involves no connection to a third-party service.
 
 ## Links to other websites
 
