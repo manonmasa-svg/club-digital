@@ -8,8 +8,8 @@ categories: ["Invoicing and Accounting"]
 tags: ["invoicing software", "e-invoicing", "quotes", "accounting", "small business"]
 author: "sophie-martin"
 image: "/images/blog/logiciel-de-facturation-criteres.jpg"
-imageAlt: "Electronic calculator display showing a row of digits"
-imageCredit: "Photo: Coyau, Wikimedia Commons (CC BY-SA 3.0, cropped)"
+imageAlt: "Hands filling in documents next to a calculator and a laptop"
+imageCredit: "Photo: Kelly Sikkema, Unsplash (cropped)"
 faq:
   - question: "How do you choose invoicing software?"
     answer: "Start by listing your real needs: invoice volume, quotes, reminders, multiple currencies, number of users. Then check e-invoicing compatibility, integrations with the bank and accounting, and test the tool during a trial period when the vendor offers one."

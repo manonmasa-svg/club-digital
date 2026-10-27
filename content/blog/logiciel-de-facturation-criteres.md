@@ -8,8 +8,8 @@ categories: ["Facturation et Comptabilité"]
 tags: ["logiciel de facturation", "facture électronique", "devis", "comptabilité", "TPE"]
 author: "sophie-martin"
 image: "/images/blog/logiciel-de-facturation-criteres.jpg"
-imageAlt: "Écran d'une calculatrice électronique affichant une suite de chiffres"
-imageCredit: "Photo : Coyau, Wikimedia Commons (CC BY-SA 3.0, recadrée)"
+imageAlt: "Mains remplissant des documents à côté d'une calculatrice et d'un ordinateur portable"
+imageCredit: "Photo : Kelly Sikkema, Unsplash (recadrée)"
 faq:
   - question: "Comment choisir un logiciel de facturation ?"
     answer: "Il faut d'abord lister ses besoins réels : volume de factures, devis, relances, multi-devises, nombre d'utilisateurs. Ensuite, vérifier la compatibilité avec la facture électronique, les intégrations avec la banque et la comptabilité, puis tester l'outil pendant une période d'essai quand l'éditeur en propose une."

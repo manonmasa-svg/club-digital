@@ -8,8 +8,8 @@ categories: ["HR and Payroll"]
 tags: ["payroll software", "DSN", "payslip", "HRIS", "HR"]
 author: "thomas-durand"
 image: "/images/blog/logiciel-de-paie-fonctionnalites.jpg"
-imageAlt: "Stacked euro banknotes and coins"
-imageCredit: "Photo: Christoph Scholz, Wikimedia Commons (CC BY-SA 2.0, cropped)"
+imageAlt: "Calculator resting on euro banknotes and printed charts"
+imageCredit: "Photo: Jakub Żerdzicki, Unsplash (cropped)"
 faq:
   - question: "What features should payroll software offer?"
     answer: "Payroll software should produce payslips, account for absences and variable pay, prepare social security filings such as the DSN in France, and export entries to accounting. How the vendor updates calculation rules is a key point."

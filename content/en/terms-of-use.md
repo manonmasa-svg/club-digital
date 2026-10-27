@@ -26,7 +26,7 @@ Comparisons of software and services are based on information published by vendo
 
 Texts published on Club Digital are the property of the publisher, unless stated otherwise. Reproducing them without permission is prohibited, except for short quotes accompanied by a link to the original page.
 
-Photographs come from Wikimedia Commons (Creative Commons licences) and Unsplash (Unsplash License). The photographer's name appears below each image.
+Photographs come from Unsplash and are used under the [Unsplash License](https://unsplash.com/license). The photographer's name appears below each image.
 
 ## Links to other websites
 

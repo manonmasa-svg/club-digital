@@ -18,7 +18,7 @@ The website is hosted by GitHub Pages, a service of GitHub, Inc., 88 Colin P Kel
 
 Texts published on Club Digital are the property of the publisher, unless stated otherwise. Reproducing them without permission is prohibited, except for short quotes accompanied by a link to the original page.
 
-Photographs come from Wikimedia Commons (Creative Commons licences) and Unsplash (Unsplash License). The credit for each image, and its licence for Wikimedia Commons images, appear below the image in the relevant article.
+Photographs come from Unsplash and are used under the [Unsplash License](https://unsplash.com/license). The photographer's name appears below the image in the relevant article.
 
 Software and brand names mentioned belong to their respective owners.
 

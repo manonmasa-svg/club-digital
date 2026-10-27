@@ -8,8 +8,8 @@ categories: ["Productivity and Collaboration"]
 tags: ["collaboration tools", "project management", "remote work", "messaging", "productivity"]
 author: "thomas-durand"
 image: "/images/blog/outils-de-collaboration-equipe.jpg"
-imageAlt: "People working on laptops in a coworking space"
-imageCredit: "Photo: Thecommondesk, Wikimedia Commons (CC BY-SA 4.0, cropped)"
+imageAlt: "Four smiling colleagues gathered around a laptop"
+imageCredit: "Photo: Jud Mackrill, Unsplash (cropped)"
 faq:
   - question: "What are the main collaboration tools in a business?"
     answer: "The main categories are instant messaging, video conferencing, project management, shared document editing and online storage. Some suites bring several of these functions together in one environment."

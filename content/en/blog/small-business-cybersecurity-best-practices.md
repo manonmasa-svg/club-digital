@@ -8,8 +8,8 @@ categories: ["Cybersecurity"]
 tags: ["cybersecurity", "backup", "passwords", "phishing", "small business"]
 author: "thomas-durand"
 image: "/images/blog/cybersecurite-bonnes-pratiques-pme.jpg"
-imageAlt: "Combination cable lock attached to a laptop"
-imageCredit: "Photo: Santeri Viinamäki, Wikimedia Commons (CC BY-SA 4.0, cropped)"
+imageAlt: "Gold combination padlock on a computer keyboard, next to bank cards"
+imageCredit: "Photo: Towfiqu barbhuiya, Unsplash (cropped)"
 faq:
   - question: "What are the cybersecurity best practices for a small business?"
     answer: "The basics are enabling two-factor authentication, using unique passwords managed by a password manager, applying updates, backing up data regularly with an offline copy and training the team to recognise phishing."

@@ -18,7 +18,7 @@ Le site est hébergé par GitHub Pages, un service de GitHub, Inc., 88 Colin P K
 
 Les textes publiés sur Club Digital sont la propriété de l'éditeur, sauf mention contraire. Leur reproduction sans autorisation est interdite, à l'exception des courtes citations accompagnées d'un lien vers la page d'origine.
 
-Les photographies proviennent de Wikimedia Commons (licences Creative Commons) et d'Unsplash (licence Unsplash). Le crédit de chaque image, et sa licence pour les images de Wikimedia Commons, figurent sous l'image de l'article concerné.
+Les photographies proviennent d'Unsplash et sont utilisées selon la [licence Unsplash](https://unsplash.com/fr/licence). Le nom du photographe figure sous l'image de l'article concerné.
 
 Les noms de logiciels et de marques cités appartiennent à leurs propriétaires respectifs.
 

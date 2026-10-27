@@ -8,8 +8,8 @@ categories: ["CRM and Marketing"]
 tags: ["CRM", "customer relationship", "prospecting", "marketing", "sales pipeline"]
 author: "thomas-durand"
 image: "/images/blog/crm-definition-usages.jpg"
-imageAlt: "Employee wearing a telephone headset at her desk"
-imageCredit: "Photo: Panelxf, Wikimedia Commons (CC0)"
+imageAlt: "Hands typing on a laptop keyboard"
+imageCredit: "Photo: Glenn Carstens-Peters, Unsplash (cropped)"
 faq:
   - question: "What is a CRM?"
     answer: "A CRM (Customer Relationship Management) is customer relationship management software. It centralises contacts, the history of interactions and sales opportunities, so that the whole team shares the same information and follows each customer without losing data."

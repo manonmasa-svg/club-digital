@@ -8,8 +8,8 @@ categories: ["Cybersécurité"]
 tags: ["cybersécurité", "sauvegarde", "mots de passe", "hameçonnage", "PME"]
 author: "thomas-durand"
 image: "/images/blog/cybersecurite-bonnes-pratiques-pme.jpg"
-imageAlt: "Antivol à câble à combinaison branché sur un ordinateur portable"
-imageCredit: "Photo : Santeri Viinamäki, Wikimedia Commons (CC BY-SA 4.0, recadrée)"
+imageAlt: "Cadenas à code doré posé sur un clavier d'ordinateur, à côté de cartes bancaires"
+imageCredit: "Photo : Towfiqu barbhuiya, Unsplash (recadrée)"
 faq:
   - question: "Quelles sont les bonnes pratiques de cybersécurité pour une petite entreprise ?"
     answer: "Les bases consistent à activer l'authentification à deux facteurs, utiliser des mots de passe uniques gérés par un gestionnaire, appliquer les mises à jour, sauvegarder régulièrement les données avec une copie hors ligne et former l'équipe à reconnaître l'hameçonnage."

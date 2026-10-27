@@ -26,7 +26,7 @@ Les comparatifs de logiciels et de services reposent sur les informations publi�
 
 Les textes publiés sur Club Digital sont la propriété de l'éditeur, sauf mention contraire. Leur reproduction sans autorisation est interdite, à l'exception des courtes citations accompagnées d'un lien vers la page d'origine.
 
-Les photographies proviennent de Wikimedia Commons (licences Creative Commons) et d'Unsplash (licence Unsplash). Le nom du photographe figure sous chaque image.
+Les photographies proviennent d'Unsplash et sont utilisées selon la [licence Unsplash](https://unsplash.com/fr/licence). Le nom du photographe figure sous chaque image.
 
 ## Liens vers d'autres sites
 
