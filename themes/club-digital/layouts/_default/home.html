@@ -20,6 +20,25 @@
     </div>
 </section>
 
+{{/* Bandeau defilant des titres (format media). La 2e copie sert a boucler, masquee aux lecteurs d'ecran */}}
+{{ with $articles }}
+<section class="ticker" aria-label="{{ T "tickerLabel" }}">
+    <span class="ticker-label">{{ T "tickerLabel" }}</span>
+    <div class="ticker-viewport">
+        <div class="ticker-track">
+            {{ range seq 2 }}
+            <ul class="ticker-list"{{ if eq . 2 }} aria-hidden="true"{{ end }}>
+                {{ $copy := . }}
+                {{ range $articles }}
+                <li><a href="{{ .RelPermalink }}"{{ if eq $copy 2 }} tabindex="-1"{{ end }}>{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
 {{/* A la une : un grand article et les suivants en liste (format media) */}}
 {{ with $articles }}
 {{ $lead := index . 0 }}

@@ -1,0 +1,58 @@
+{{/* Effets dynamiques (27 octobre 2026) : apparition au defilement, en-tete au defilement,
+     barre de progression de lecture (articles), bouton retour en haut.
+     Aucun service externe. Tout est desactive si l'utilisateur limite les animations. */}}
+{{ if and .IsPage (eq .Section "blog") }}<div class="read-progress" aria-hidden="true"><span></span></div>{{ end }}
+<button type="button" class="back-to-top" aria-label="{{ T "backToTop" }}" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<script>
+(function () {
+    var root = document.documentElement;
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var header = document.querySelector('.site-header');
+    var bar = document.querySelector('.read-progress span');
+    var article = document.querySelector('.article-content');
+    var toTop = document.querySelector('.back-to-top');
+    var ticking = false;
+
+    function onScroll() {
+        var y = window.scrollY;
+        if (header) header.classList.toggle('is-scrolled', y > 8);
+        if (toTop) toTop.hidden = y < 700;
+        if (bar && article) {
+            var start = article.offsetTop - window.innerHeight * 0.3;
+            var end = article.offsetTop + article.offsetHeight - window.innerHeight * 0.7;
+            var p = Math.min(1, Math.max(0, (y - start) / Math.max(1, end - start)));
+            bar.style.transform = 'scaleX(' + p + ')';
+        }
+        ticking = false;
+    }
+    window.addEventListener('scroll', function () {
+        if (!ticking) { ticking = true; window.requestAnimationFrame(onScroll); }
+    }, { passive: true });
+    onScroll();
+
+    if (toTop) toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+
+    // Apparition au defilement, avec un leger decalage entre elements voisins
+    var targets = document.querySelectorAll('.section-head, .article-card, .category-card, .method-item, .featured-lead, .featured-list li, .related-card, .author-box, .list-content .prose');
+    if (reduce || !('IntersectionObserver' in window)) return;
+    var groups = new Map();
+    targets.forEach(function (el) {
+        var parent = el.parentElement;
+        var i = groups.get(parent) || 0;
+        groups.set(parent, i + 1);
+        el.style.setProperty('--reveal-delay', Math.min(i, 5) * 70 + 'ms');
+        el.classList.add('reveal');
+    });
+    var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    targets.forEach(function (el) { io.observe(el); });
+    root.classList.add('motion-ready');
+})();
+</script>

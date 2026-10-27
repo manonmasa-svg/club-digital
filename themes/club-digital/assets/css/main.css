@@ -2003,3 +2003,141 @@ html { scroll-padding-top: calc(var(--header-h) + 1.25rem); }
     .topic-pills::-webkit-scrollbar { display: none; }
     .topic-pill { flex-shrink: 0; }
 }
+
+/* ========================================
+   Effets dynamiques (27 octobre 2026)
+   Apparition au defilement, bandeau defilant des titres, entree du titre
+   d'accueil, barre de progression de lecture, bouton retour en haut.
+   Tout est coupe si l'utilisateur limite les animations.
+   ======================================== */
+
+/* --- Entree du bandeau d'accueil --- */
+@keyframes cd-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+/* Titre et chapo : mouvement seul, sans masquage, pour ne pas retarder l affichage principal (LCP) */
+@keyframes cd-slide { from { transform: translateY(14px); } to { transform: none; } }
+@keyframes cd-underline { from { background-size: 0% 0.22em; } to { background-size: 100% 0.22em; } }
+.home-hero .kicker,
+.home-hero h1,
+.home-hero-lead,
+.topic-pills { animation: cd-rise 0.7s cubic-bezier(.2, .7, .2, 1) both; }
+.home-hero h1 { animation-name: cd-slide; animation-delay: 0s; }
+.home-hero-lead { animation-name: cd-slide; animation-delay: 0.08s; }
+.topic-pills { animation-delay: 0.28s; }
+.home-hero h1 .hl {
+    box-shadow: none;
+    background-image: linear-gradient(var(--signal), var(--signal));
+    background-repeat: no-repeat;
+    background-position: 0 92%;
+    background-size: 100% 0.22em;
+    animation: cd-underline 0.9s 0.6s cubic-bezier(.2, .7, .2, 1) both;
+}
+.topic-pill { transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast); }
+.topic-pill:hover { transform: translateY(-2px); }
+
+/* --- Bandeau defilant des titres --- */
+.ticker {
+    display: flex;
+    align-items: stretch;
+    background: var(--signal);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+    font-weight: 600;
+    overflow: hidden;
+}
+.ticker-label {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.1rem;
+    background: var(--ink);
+    color: var(--white);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.ticker-label::before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--signal);
+    animation: cd-pulse 1.6s ease-in-out infinite;
+}
+@keyframes cd-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+.ticker-viewport { overflow: hidden; flex: 1; display: flex; align-items: center; }
+.ticker-track { display: flex; width: max-content; animation: cd-marquee 60s linear infinite; }
+.ticker:hover .ticker-track, .ticker:focus-within .ticker-track { animation-play-state: paused; }
+@keyframes cd-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.ticker-list { display: flex; list-style: none; margin: 0; padding: 0; }
+.ticker-list li { display: flex; align-items: center; white-space: nowrap; }
+.ticker-list li::after { content: ''; width: 0.4rem; height: 0.4rem; margin: 0 1.4rem; background: var(--ink); border-radius: 1px; transform: rotate(45deg); }
+.ticker-list a { color: var(--ink); text-decoration: none; }
+.ticker-list a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.ticker-list a:focus-visible { outline-color: var(--ink); }
+
+/* --- Apparition au defilement (classes posees par le script) --- */
+.motion-ready .reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(.2, .7, .2, 1), border-color var(--transition-fast);
+    transition-delay: var(--reveal-delay, 0ms), var(--reveal-delay, 0ms), 0ms;
+}
+.motion-ready .reveal.is-in { opacity: 1; transform: none; }
+.motion-ready .article-card.reveal.is-in:hover { transform: translateY(-3px); transition-delay: 0ms; }
+
+/* --- En-tete au defilement --- */
+.site-header { transition: box-shadow 0.25s ease; }
+.site-header.is-scrolled { box-shadow: 0 6px 24px rgba(20, 22, 26, 0.28); }
+
+/* --- Cartes : fleche qui glisse au survol --- */
+.article-card h3 a::after {
+    content: '\2192';
+    display: inline-block;
+    margin-left: 0.35rem;
+    color: var(--petrol);
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity var(--transition-base), transform var(--transition-base);
+}
+.article-card:hover h3 a::after { opacity: 1; transform: none; }
+.category-card::before { transition: transform 0.3s ease; }
+.category-card:hover::before { transform: rotate(45deg) scale(1.2); }
+.method-num { transition: transform 0.3s ease; }
+.method-item:hover .method-num { transform: translateX(6px); }
+
+/* --- Barre de progression de lecture --- */
+.read-progress { position: fixed; top: 0; left: 0; right: 0; height: 4px; z-index: 200; pointer-events: none; }
+.read-progress span { display: block; height: 100%; background: var(--signal); transform: scaleX(0); transform-origin: 0 50%; }
+
+/* --- Bouton retour en haut --- */
+.back-to-top {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 150;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--signal);
+    color: var(--ink);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(20, 22, 26, 0.25);
+    transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+.back-to-top[hidden] { display: none; }
+.back-to-top:hover { transform: translateY(-3px); background: var(--cta-hover); }
+
+@media (prefers-reduced-motion: reduce) {
+    .home-hero .kicker, .home-hero h1, .home-hero-lead, .topic-pills, .home-hero h1 .hl { animation: none; }
+    .ticker-track { animation: none; }
+    .ticker-viewport { overflow-x: auto; }
+    .ticker-list[aria-hidden="true"] { display: none; }
+    .ticker-label::before { animation: none; }
+    .read-progress span { transition: none; }
+}
