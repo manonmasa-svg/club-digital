@@ -2,11 +2,14 @@
 title: "Cybersecurity best practices for small businesses"
 translationKey: "small-business-cybersecurity"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Small business cybersecurity: two-factor authentication, updates, backups, staff awareness and how to respond to an incident."
 categories: ["Cybersecurity"]
 tags: ["cybersecurity", "backup", "passwords", "phishing", "small business"]
 author: "thomas-durand"
+image: "/images/blog/cybersecurite-bonnes-pratiques-pme.jpg"
+imageAlt: "Combination cable lock attached to a laptop"
+imageCredit: "Photo: Santeri Viinamäki, Wikimedia Commons (CC BY-SA 4.0, cropped)"
 faq:
   - question: "What are the cybersecurity best practices for a small business?"
     answer: "The basics are to enable two-factor authentication, use unique passwords managed by a password manager, apply updates, back up data regularly with an offline copy and train the team to recognise phishing."

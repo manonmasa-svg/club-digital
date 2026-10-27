@@ -4,22 +4,65 @@
 {{ $llms := resources.Get "llms.txt" | resources.ExecuteAsTemplate "llms.txt" . }}
 {{ $llms.Publish }}
 {{ end }}
-{{ $articles := where .Site.RegularPages "Section" "blog" }}
+{{ $articles := (where .Site.RegularPages "Section" "blog").ByDate.Reverse }}
 {{ $blog := site.GetPage "/blog" }}
+{{ $cats := where (where .Site.Pages "Kind" "term") "Data.Plural" "categories" }}
 
+{{/* Bandeau d'ouverture : promesse + rubriques en pastilles */}}
 <section class="home-hero">
     <div class="container">
         <span class="kicker">{{ T "homeKicker" }}</span>
         <h1>{{ T "homeH1a" }} <span class="hl">{{ T "homeH1b" }}</span></h1>
         <p class="home-hero-lead">{{ .Site.Params.description }}</p>
-        <div class="home-hero-actions">
-            {{ with $blog }}<a href="{{ .RelPermalink }}" class="btn-primary">{{ T "homeCta" }}</a>{{ end }}
-            {{ with site.GetPage (cond (eq site.Language.Lang "en") "/editorial-policy" "/ligne-editoriale") }}<a href="{{ .RelPermalink }}" class="btn-outline btn-ghost">{{ T "homeCta2" }}</a>{{ end }}
+        <nav class="topic-pills" aria-label="{{ T "sectionsTitle" }}">
+            {{ range $cats.ByWeight }}<a href="{{ .RelPermalink }}" class="topic-pill">{{ .Title }}</a>{{ end }}
+        </nav>
+    </div>
+</section>
+
+{{/* A la une : un grand article et les suivants en liste (format media) */}}
+{{ with $articles }}
+{{ $lead := index . 0 }}
+<section class="home-featured" aria-labelledby="featured-title">
+    <div class="container">
+        <div class="section-head section-head-light">
+            <h2 id="featured-title">{{ T "featured" }}</h2>
+            {{ with $blog }}<a href="{{ .RelPermalink }}">{{ T "allArticles" }}</a>{{ end }}
+        </div>
+        <div class="featured-grid">
+            {{ with $lead }}
+            {{ $cat := index (.GetTerms "categories") 0 }}
+            <article class="featured-lead">
+                <a href="{{ .RelPermalink }}" class="featured-lead-media" tabindex="-1" aria-hidden="true">
+                    {{ with .Params.image }}<img src="{{ . | relURL }}" alt="" width="1200" height="675" fetchpriority="high">{{ else }}<span class="featured-lead-placeholder">{{ substr $.Title 0 1 }}</span>{{ end }}
+                </a>
+                <div class="featured-lead-body">
+                    {{ with $cat }}<a href="{{ .RelPermalink }}" class="card-pill">{{ .LinkTitle }}</a>{{ end }}
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <p>{{ .Description }}</p>
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+                </div>
+            </article>
+            {{ end }}
+            <ol class="featured-list">
+                {{ range after 1 (first 4 .) }}
+                {{ $cat := index (.GetTerms "categories") 0 }}
+                <li>
+                    <a href="{{ .RelPermalink }}" class="featured-item">
+                        {{ with .Params.image }}<img src="{{ . | relURL }}" alt="" width="160" height="110" loading="lazy">{{ end }}
+                        <span class="featured-item-text">
+                            {{ with $cat }}<span class="featured-item-cat">{{ .LinkTitle }}</span>{{ end }}
+                            <span class="featured-item-title">{{ .Title }}</span>
+                        </span>
+                    </a>
+                </li>
+                {{ end }}
+            </ol>
         </div>
     </div>
 </section>
 
-{{ with $articles }}
+{{ if gt (len .) 4 }}
 <section class="home-section">
     <div class="container">
         <div class="section-head">
@@ -27,12 +70,13 @@
             {{ with $blog }}<a href="{{ .RelPermalink }}">{{ T "allArticles" }}</a>{{ end }}
         </div>
         <div class="grid-articles">
-            {{ range first 6 . }}
+            {{ range first 6 (after 4 .) }}
             {{ partial "card.html" . }}
             {{ end }}
         </div>
     </div>
 </section>
+{{ end }}
 {{ end }}
 
 <section class="home-section home-section-alt">
@@ -41,8 +85,7 @@
             <h2>{{ T "sectionsTitle" }}</h2>
         </div>
         <div class="grid-categories">
-            {{ range (where .Site.Pages "Kind" "term").ByWeight }}
-            {{ if eq .Data.Plural "categories" }}
+            {{ range $cats.ByWeight }}
             {{ $n := len .Pages }}
             <a href="{{ .RelPermalink }}" class="category-card">
                 <h3>{{ .Title }}</h3>
@@ -50,24 +93,25 @@
                 <span class="category-count">{{ $n }} {{ if gt $n 1 }}{{ T "articleOther" }}{{ else }}{{ T "articleOne" }}{{ end }}</span>
             </a>
             {{ end }}
-            {{ end }}
         </div>
     </div>
 </section>
 
-<section class="home-section">
+<section class="home-section home-method">
     <div class="container">
-        <div class="section-head">
+        <div class="section-head section-head-light">
             <h2>{{ T "methodTitle" }}</h2>
+            {{ with site.GetPage (cond (eq site.Language.Lang "en") "/editorial-policy" "/ligne-editoriale") }}<a href="{{ .RelPermalink }}">{{ T "homeCta2" }}</a>{{ end }}
         </div>
-        <div class="grid-categories">
+        <ol class="method-grid">
             {{ range slice 1 2 3 }}
-            <div class="category-card">
+            <li class="method-item">
+                <span class="method-num" aria-hidden="true">0{{ . }}</span>
                 <h3>{{ T (printf "method%dTitle" .) }}</h3>
                 <p>{{ T (printf "method%dText" .) }}</p>
-            </div>
+            </li>
             {{ end }}
-        </div>
+        </ol>
     </div>
 </section>
 

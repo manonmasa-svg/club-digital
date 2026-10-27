@@ -2,11 +2,14 @@
 title: "Hébergement web : mutualisé, VPS, dédié ou cloud ?"
 translationKey: "web-hosting-types"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Hébergement web mutualisé, VPS, serveur dédié ou cloud : différences, avantages, limites et critères pour choisir la bonne formule."
 categories: ["Cloud et Hébergement"]
 tags: ["hébergement web", "VPS", "cloud", "serveur dédié", "site internet"]
 author: "thomas-durand"
+image: "/images/blog/hebergement-mutualise-vps-cloud.jpg"
+imageAlt: "Allée de baies de serveurs dans un centre de données"
+imageCredit: "Photo : PiDatacenters, Wikimedia Commons (CC BY-SA 4.0, recadrée)"
 faq:
   - question: "Quelle différence entre hébergement mutualisé, VPS et cloud ?"
     answer: "Avec l'hébergement mutualisé, plusieurs sites partagent les ressources d'un même serveur. Un VPS est un serveur virtuel avec des ressources réservées. Le cloud répartit l'hébergement sur une infrastructure dont la capacité peut être ajustée selon les besoins. Le serveur dédié, enfin, réserve une machine entière à un seul client."

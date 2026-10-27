@@ -2,11 +2,14 @@
 title: "Payroll software: the essential features"
 translationKey: "payroll-software-features"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Payroll software: payslips, French DSN reporting, absences, accounting export and data security. The features to check before choosing."
 categories: ["HR and Payroll"]
 tags: ["payroll software", "DSN", "payslip", "HRIS", "HR"]
 author: "thomas-durand"
+image: "/images/blog/logiciel-de-paie-fonctionnalites.jpg"
+imageAlt: "Stacked euro banknotes and coins"
+imageCredit: "Photo: Christoph Scholz, Wikimedia Commons (CC BY-SA 2.0, cropped)"
 faq:
   - question: "What features should you expect from payroll software?"
     answer: "Payroll software should produce payslips, take absences and variable items into account, prepare social security filings such as the DSN in France, and export entries to accounting. How the vendor updates calculation rules is a key point."

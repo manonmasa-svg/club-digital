@@ -2,11 +2,14 @@
 title: "CRM : définition, fonctions et usages en entreprise"
 translationKey: "what-is-a-crm"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Qu'est-ce qu'un CRM ? Définition, fonctions principales, usages commerciaux et marketing, et points à vérifier avant de choisir un outil."
 categories: ["CRM et Marketing"]
 tags: ["CRM", "relation client", "prospection", "marketing", "pipeline commercial"]
 author: "thomas-durand"
+image: "/images/blog/crm-definition-usages.jpg"
+imageAlt: "Employée portant un casque téléphonique à son poste de travail"
+imageCredit: "Photo : Panelxf, Wikimedia Commons (CC0)"
 faq:
   - question: "Qu'est-ce qu'un CRM ?"
     answer: "Un CRM (Customer Relationship Management) est un logiciel de gestion de la relation client. Il centralise les contacts, l'historique des échanges et les opportunités commerciales, pour que toute l'équipe dispose des mêmes informations et suive chaque client sans perte de données."

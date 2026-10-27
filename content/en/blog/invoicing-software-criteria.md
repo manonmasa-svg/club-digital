@@ -2,11 +2,14 @@
 title: "Invoicing software: the criteria for choosing well"
 translationKey: "invoicing-software-criteria"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Invoicing software: essential features, e-invoicing, integrations and a method for choosing the right tool for your business."
 categories: ["Invoicing and Accounting"]
 tags: ["invoicing software", "e-invoicing", "quotes", "accounting", "small business"]
 author: "sophie-martin"
+image: "/images/blog/logiciel-de-facturation-criteres.jpg"
+imageAlt: "Electronic calculator display showing a row of digits"
+imageCredit: "Photo: Coyau, Wikimedia Commons (CC BY-SA 3.0, cropped)"
 faq:
   - question: "How do you choose invoicing software?"
     answer: "Start by listing your actual needs: invoice volume, quotes, reminders, multiple currencies, number of users. Then check e-invoicing compatibility, integrations with your bank and accounting tool, and test the software during a trial period when the vendor offers one."

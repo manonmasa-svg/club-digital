@@ -2,11 +2,14 @@
 title: "How to automate repetitive tasks: where to start"
 translationKey: "automate-repetitive-tasks"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "How to automate repetitive tasks at work: spot the right processes, understand triggers and actions, choose between no-code and AI."
 categories: ["AI and Automation"]
 tags: ["automation", "no-code", "artificial intelligence", "workflow", "productivity"]
 author: "thomas-durand"
+image: "/images/blog/automatiser-taches-repetitives.jpg"
+imageAlt: "Hands typing on a laptop keyboard next to an alarm clock"
+imageCredit: "Photo: Shixart1985, Wikimedia Commons (CC BY 2.0, cropped)"
 faq:
   - question: "How do you automate repetitive tasks in a business?"
     answer: "Start by listing frequent, stable tasks based on clear rules, such as copying data between two tools or sending notifications. Then choose an automation tool, build a first simple scenario and test it before extending it."

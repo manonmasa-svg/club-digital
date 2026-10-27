@@ -2,11 +2,14 @@
 title: "Cybersécurité : les bonnes pratiques pour une TPE ou une PME"
 translationKey: "small-business-cybersecurity"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Cybersécurité en TPE et PME : authentification à deux facteurs, mises à jour, sauvegardes, sensibilisation et réaction en cas d'incident."
 categories: ["Cybersécurité"]
 tags: ["cybersécurité", "sauvegarde", "mots de passe", "hameçonnage", "PME"]
 author: "thomas-durand"
+image: "/images/blog/cybersecurite-bonnes-pratiques-pme.jpg"
+imageAlt: "Antivol à câble à combinaison branché sur un ordinateur portable"
+imageCredit: "Photo : Santeri Viinamäki, Wikimedia Commons (CC BY-SA 4.0, recadrée)"
 faq:
   - question: "Quelles sont les bonnes pratiques de cybersécurité pour une petite entreprise ?"
     answer: "Les bases consistent à activer l'authentification à deux facteurs, utiliser des mots de passe uniques gérés par un gestionnaire, appliquer les mises à jour, sauvegarder régulièrement les données avec une copie hors ligne et former l'équipe à reconnaître l'hameçonnage."

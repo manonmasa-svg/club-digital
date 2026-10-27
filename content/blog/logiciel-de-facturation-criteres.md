@@ -2,11 +2,14 @@
 title: "Logiciel de facturation : les critères pour bien choisir"
 translationKey: "invoicing-software-criteria"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Logiciel de facturation : fonctions essentielles, facture électronique, intégrations et méthode pour choisir l'outil adapté à son activité."
 categories: ["Facturation et Comptabilité"]
 tags: ["logiciel de facturation", "facture électronique", "devis", "comptabilité", "TPE"]
 author: "sophie-martin"
+image: "/images/blog/logiciel-de-facturation-criteres.jpg"
+imageAlt: "Écran d'une calculatrice électronique affichant une suite de chiffres"
+imageCredit: "Photo : Coyau, Wikimedia Commons (CC BY-SA 3.0, recadrée)"
 faq:
   - question: "Comment choisir un logiciel de facturation ?"
     answer: "Il faut d'abord lister ses besoins réels : volume de factures, devis, relances, multi-devises, nombre d'utilisateurs. Ensuite, vérifier la compatibilité avec la facture électronique, les intégrations avec la banque et la comptabilité, puis tester l'outil pendant une période d'essai quand l'éditeur en propose une."

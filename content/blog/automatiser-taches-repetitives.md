@@ -2,11 +2,14 @@
 title: "Automatiser les tâches répétitives : par où commencer"
 translationKey: "automate-repetitive-tasks"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Automatiser les tâches répétitives en entreprise : identifier les bons processus, comprendre déclencheurs et actions, choisir entre no-code et IA."
 categories: ["IA et Automatisation"]
 tags: ["automatisation", "no-code", "intelligence artificielle", "workflow", "productivité"]
 author: "thomas-durand"
+image: "/images/blog/automatiser-taches-repetitives.jpg"
+imageAlt: "Mains tapant sur le clavier d'un ordinateur portable, à côté d'un réveil"
+imageCredit: "Photo : Shixart1985, Wikimedia Commons (CC BY 2.0, recadrée)"
 faq:
   - question: "Comment automatiser les tâches répétitives en entreprise ?"
     answer: "Il faut commencer par recenser les tâches fréquentes, stables et basées sur des règles claires, comme la copie de données entre deux outils ou l'envoi de notifications. On choisit ensuite un outil d'automatisation, on construit un premier scénario simple, puis on le teste avant de l'étendre."

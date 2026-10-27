@@ -2,11 +2,14 @@
 title: "Outils de collaboration : les familles à connaître"
 translationKey: "team-collaboration-tools"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Outils de collaboration en entreprise : messagerie, visioconférence, gestion de projet, documents partagés. À quoi sert chaque famille et comment choisir."
 categories: ["Productivité et Collaboration"]
 tags: ["outils de collaboration", "gestion de projet", "télétravail", "messagerie", "productivité"]
 author: "thomas-durand"
+image: "/images/blog/outils-de-collaboration-equipe.jpg"
+imageAlt: "Personnes travaillant sur des ordinateurs portables dans un espace de coworking"
+imageCredit: "Photo : Thecommondesk, Wikimedia Commons (CC BY-SA 4.0, recadrée)"
 faq:
   - question: "Quels sont les principaux outils de collaboration en entreprise ?"
     answer: "Les principales familles sont la messagerie instantanée, la visioconférence, la gestion de projet, l'édition de documents partagés et le stockage en ligne. Certaines suites regroupent plusieurs de ces fonctions dans un même environnement."

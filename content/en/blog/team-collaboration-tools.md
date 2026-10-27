@@ -2,11 +2,14 @@
 title: "Collaboration tools: the categories to know"
 translationKey: "team-collaboration-tools"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Business collaboration tools: messaging, video calls, project management, shared documents. What each category is for and how to choose."
 categories: ["Productivity and Collaboration"]
 tags: ["collaboration tools", "project management", "remote work", "messaging", "productivity"]
 author: "thomas-durand"
+image: "/images/blog/outils-de-collaboration-equipe.jpg"
+imageAlt: "People working on laptops in a coworking space"
+imageCredit: "Photo: Thecommondesk, Wikimedia Commons (CC BY-SA 4.0, cropped)"
 faq:
   - question: "What are the main collaboration tools in a business?"
     answer: "The main categories are instant messaging, video conferencing, project management, shared document editing and online storage. Some suites bring several of these functions together in a single environment."

@@ -2,11 +2,14 @@
 title: "Logiciel de paie : les fonctionnalités essentielles"
 translationKey: "payroll-software-features"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Logiciel de paie : bulletins, DSN, absences, export comptable et sécurité des données. Les fonctionnalités à vérifier avant de choisir."
 categories: ["RH et Paie"]
 tags: ["logiciel de paie", "DSN", "bulletin de paie", "SIRH", "RH"]
 author: "thomas-durand"
+image: "/images/blog/logiciel-de-paie-fonctionnalites.jpg"
+imageAlt: "Billets et pièces en euros empilés"
+imageCredit: "Photo : Christoph Scholz, Wikimedia Commons (CC BY-SA 2.0, recadrée)"
 faq:
   - question: "Quelles fonctionnalités attendre d'un logiciel de paie ?"
     answer: "Un logiciel de paie doit produire les bulletins de salaire, tenir compte des absences et des variables, préparer les déclarations sociales comme la DSN en France, et exporter les écritures vers la comptabilité. La mise à jour des règles de calcul par l'éditeur est un point clé."

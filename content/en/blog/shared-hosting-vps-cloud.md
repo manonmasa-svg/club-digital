@@ -2,11 +2,14 @@
 title: "Web hosting: shared, VPS, dedicated or cloud?"
 translationKey: "web-hosting-types"
 date: 2026-10-18
-lastmod: 2026-10-18
+lastmod: 2026-10-27
 description: "Shared web hosting, VPS, dedicated server or cloud: differences, benefits, limits and criteria for choosing the right option."
 categories: ["Cloud and Hosting"]
 tags: ["web hosting", "VPS", "cloud", "dedicated server", "website"]
 author: "thomas-durand"
+image: "/images/blog/hebergement-mutualise-vps-cloud.jpg"
+imageAlt: "Aisle of server racks in a data center"
+imageCredit: "Photo: PiDatacenters, Wikimedia Commons (CC BY-SA 4.0, cropped)"
 faq:
   - question: "What is the difference between shared hosting, VPS and cloud?"
     answer: "With shared hosting, several websites share the resources of the same server. A VPS is a virtual server with reserved resources. Cloud hosting spreads the website over an infrastructure whose capacity can be adjusted as needed. A dedicated server, finally, reserves an entire machine for a single customer."
