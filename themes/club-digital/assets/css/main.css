@@ -2218,5 +2218,7 @@ html { scroll-padding-top: calc(var(--header-h) + 1.25rem); }
 }
 
 /* FAQ de l accueil */
-.home-faq-list { max-width: 860px; }
+/* Bloc centre (demande de Manon, 27 octobre 2026) : titre et liste sur la meme largeur, texte des questions aligne a gauche */
+.home-faq .section-head { max-width: 860px; margin-left: auto; margin-right: auto; justify-content: center; text-align: center; }
+.home-faq-list { max-width: 860px; margin-left: auto; margin-right: auto; }
 .home-faq-list details p { margin: 0; padding-top: 0.25rem; }
