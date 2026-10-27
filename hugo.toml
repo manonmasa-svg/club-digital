@@ -62,6 +62,11 @@ enableRobotsTXT = true
   name = "Productivité et Collaboration"
   pageRef = "/categories/productivité-et-collaboration"
   weight = 7
+
+[[languages.fr.menus.main]]
+  name = "Comparatifs"
+  pageRef = "/categories/comparatifs"
+  weight = 8
 [[languages.fr.menus.main]]
   name = "Le Blog"
   pageRef = "/blog"
@@ -130,6 +135,11 @@ enableRobotsTXT = true
   name = "Productivity and Collaboration"
   pageRef = "/categories/productivity-and-collaboration"
   weight = 7
+
+[[languages.en.menus.main]]
+  name = "Comparisons"
+  pageRef = "/categories/comparisons"
+  weight = 8
 [[languages.en.menus.main]]
   name = "The Blog"
   pageRef = "/blog"

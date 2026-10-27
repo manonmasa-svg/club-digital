@@ -2141,3 +2141,19 @@ html { scroll-padding-top: calc(var(--header-h) + 1.25rem); }
     .ticker-label::before { animation: none; }
     .read-progress span { transition: none; }
 }
+
+/* --- Article : image a droite du titre (27 octobre 2026, demande de Manon) --- */
+.article-hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: var(--space-lg); align-items: center; margin-bottom: var(--space-lg); }
+.article-hero-text { max-width: none; }
+.article-title { font-size: clamp(1.9rem, 3.4vw, 2.7rem); }
+.article-description { font-size: 1.12rem; }
+.article-hero-image { margin: 0; }
+.article-hero-image img { aspect-ratio: 4 / 3; max-height: 420px; }
+.list-empty { font-family: var(--font-ui); color: var(--text-light); padding: var(--space-md) 0; }
+@media (max-width: 900px) {
+    .article-hero { grid-template-columns: 1fr; gap: var(--space-md); }
+    .article-hero-image img { aspect-ratio: 16 / 9; }
+    .article-hero-image { order: 0; }
+}
+/* Barre de rubriques : 8 rubriques + Le Blog doivent tenir sur une ligne en 1366 px */
+@media (min-width: 1025px) { .site-nav { gap: 0 0.65rem; } .nav-link { font-size: 0.83rem; } }

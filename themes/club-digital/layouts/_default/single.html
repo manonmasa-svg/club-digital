@@ -68,14 +68,13 @@
                 </div>
             </div>
 
-        </div>
-
-        {{ with .Params.image }}
-        <figure class="article-hero-image">
+            {{ with .Params.image }}
+            <figure class="article-hero-image">
             <img src="{{ . | relURL }}" alt="{{ with $.Params.imageAlt }}{{ . }}{{ else }}{{ $.Title }}{{ end }}" width="1200" height="675" loading="eager" fetchpriority="high">
             {{ with $.Params.imageCredit }}<figcaption class="article-hero-image-credit">{{ . }}</figcaption>{{ end }}
-        </figure>
-        {{ end }}
+            </figure>
+            {{ end }}
+        </div>
 
         <div class="article-layout">
             {{ if .TableOfContents }}

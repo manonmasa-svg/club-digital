@@ -6,7 +6,7 @@
     <div class="container">
         <h1>{{ .Title }}</h1>
         {{ with .Description }}<p class="list-description">{{ . }}</p>{{ end }}
-        {{ if ne .Kind "taxonomy" }}
+        {{ if and (ne .Kind "taxonomy") .Pages }}
         {{ $n := len .Pages }}
         <span class="list-count">{{ $n }} {{ if gt $n 1 }}{{ T "articleOther" }}{{ else }}{{ T "articleOne" }}{{ end }}</span>
         {{ end }}
@@ -25,12 +25,14 @@
             </a>
             {{ end }}
         </div>
-        {{ else }}
+        {{ else if $pages }}
         <div class="grid-articles">
             {{ range $pages }}
             {{ partial "card.html" . }}
             {{ end }}
         </div>
+        {{ else }}
+        <p class="list-empty">{{ T "emptySection" }}</p>
         {{ end }}
     </div>
 </section>
