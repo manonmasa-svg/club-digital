@@ -24,6 +24,10 @@
 {{ with $articles }}
 <section class="ticker" aria-label="{{ T "tickerLabel" }}">
     <span class="ticker-label">{{ T "tickerLabel" }}</span>
+    <button type="button" class="ticker-toggle" data-label-pause="{{ T "tickerPause" }}" data-label-play="{{ T "tickerPlay" }}" aria-label="{{ T "tickerPause" }}">
+        <svg class="icon-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="5" y="4" width="5" height="16" rx="1"/><rect x="14" y="4" width="5" height="16" rx="1"/></svg>
+        <svg class="icon-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5z"/></svg>
+    </button>
     <div class="ticker-viewport">
         <div class="ticker-track">
             {{ range seq 2 }}
@@ -53,7 +57,7 @@
             {{ $cat := index (.GetTerms "categories") 0 }}
             <article class="featured-lead">
                 <a href="{{ .RelPermalink }}" class="featured-lead-media" tabindex="-1" aria-hidden="true">
-                    {{ with .Params.image }}<img src="{{ . | relURL }}" alt="" width="1200" height="675" fetchpriority="high">{{ else }}<span class="featured-lead-placeholder">{{ substr $.Title 0 1 }}</span>{{ end }}
+                    {{ with .Params.image }}{{ partial "resp-img.html" (dict "src" . "alt" "" "widths" (slice 480 800 1200) "sizes" "(max-width: 1024px) 100vw, 720px" "loading" "eager" "fetchpriority" "high") }}{{ else }}<span class="featured-lead-placeholder">{{ substr $.Title 0 1 }}</span>{{ end }}
                 </a>
                 <div class="featured-lead-body">
                     {{ with $cat }}<a href="{{ .RelPermalink }}" class="card-pill">{{ .LinkTitle }}</a>{{ end }}
@@ -68,7 +72,7 @@
                 {{ $cat := index (.GetTerms "categories") 0 }}
                 <li>
                     <a href="{{ .RelPermalink }}" class="featured-item">
-                        {{ with .Params.image }}<img src="{{ . | relURL }}" alt="" width="160" height="110" loading="lazy">{{ end }}
+                        {{ with .Params.image }}{{ partial "resp-img.html" (dict "src" . "alt" "" "widths" (slice 240 480) "sizes" "104px") }}{{ end }}
                         <span class="featured-item-text">
                             {{ with $cat }}<span class="featured-item-cat">{{ .LinkTitle }}</span>{{ end }}
                             <span class="featured-item-title">{{ .Title }}</span>

@@ -3,7 +3,7 @@
 <article class="article-card">
     <a href="{{ .RelPermalink }}" class="article-card-image-wrapper" tabindex="-1" aria-hidden="true">
         {{ with .Params.image }}
-        <img src="{{ . | relURL }}" alt="" class="article-card-image" loading="lazy" width="600" height="338">
+        {{ partial "resp-img.html" (dict "src" . "alt" "" "class" "article-card-image" "widths" (slice 480 800) "sizes" "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 380px") }}
         {{ else }}
         <span class="article-card-image article-card-image-placeholder">{{ substr $.Title 0 1 }}</span>
         {{ end }}

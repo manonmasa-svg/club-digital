@@ -2157,3 +2157,49 @@ html { scroll-padding-top: calc(var(--header-h) + 1.25rem); }
 }
 /* Barre de rubriques : 8 rubriques + Le Blog doivent tenir sur une ligne en 1366 px */
 @media (min-width: 1025px) { .site-nav { gap: 0 0.65rem; } .nav-link { font-size: 0.83rem; } }
+
+/* ========================================
+   Correctifs accessibilite (audit ui-ux-pro-max, 27 octobre 2026)
+   ======================================== */
+
+/* Contraste : meta des articles en gris lisible (5B6068 sur papier, environ 5,9:1 au lieu de 2,3:1) */
+.article-date, .article-reading-time, .article-updated { color: var(--text-light); }
+.meta-separator { color: #8A8F96; }
+
+/* Focus : encre sur fond clair (l orange ne fait que 2,8:1 sur le papier), orange sur fond encre */
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.site-header :focus-visible, .home-hero :focus-visible, .home-featured :focus-visible,
+.home-method :focus-visible, .list-header :focus-visible, .site-footer :focus-visible,
+.ticker-label :focus-visible { outline-color: var(--signal); }
+.ticker :focus-visible { outline-color: var(--ink); outline-offset: -3px; }
+.back-to-top:focus-visible { outline-color: var(--ink); }
+
+/* Plus aucun texte sous 12 px */
+.ticker-label, .card-pill, .featured-item-cat, .related-category, .toc-title { font-size: 0.75rem; }
+.article-hero-image-credit { font-size: 0.78rem; }
+
+/* Cibles cliquables : 24 px minimum (WCAG 2.5.8) dans le pied de page et la barre de rubriques */
+.site-footer li a, .footer-legal a { display: inline-block; padding: 0.2rem 0; min-height: 24px; }
+.footer-col li + li { margin-top: 0.15rem; }
+
+/* Bandeau defilant : bouton pause */
+.ticker-toggle {
+    flex-shrink: 0;
+    width: 44px;
+    border: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    background: var(--ink);
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.ticker-toggle:hover { color: var(--signal); }
+.ticker-toggle:focus-visible { outline: 3px solid var(--signal); outline-offset: -3px; }
+.ticker-toggle .icon-play { display: none; }
+.ticker.is-paused .ticker-toggle .icon-play { display: block; }
+.ticker.is-paused .ticker-toggle .icon-pause { display: none; }
+.ticker.is-paused .ticker-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .ticker-toggle { display: none; } }
+@media (max-width: 600px) { .ticker-label { padding: 0.7rem 0.75rem; } }
+.ticker-list a { display: inline-block; padding: 0.2rem 0; min-height: 24px; }

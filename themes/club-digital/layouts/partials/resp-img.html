@@ -1,0 +1,22 @@
+{{/* Image responsive (27 octobre 2026) : WebP en plusieurs largeurs, le navigateur choisit.
+     Parametres : src (chemin du frontmatter, ex. /images/blog/x.jpg, monte dans assets via hugo.toml),
+     alt, class, sizes, widths (liste), loading, fetchpriority.
+     Si l'image n'est pas trouvee dans assets, repli sur le fichier statique d'origine. */}}
+{{ $src := .src }}
+{{ $widths := .widths | default (slice 480 800 1200 1600) }}
+{{ $loading := .loading | default "lazy" }}
+{{ with resources.Get (strings.TrimPrefix "/" $src) }}
+{{ $img := . }}
+{{ $set := slice }}
+{{ $default := "" }}
+{{ range $widths }}
+{{ if le . $img.Width }}
+{{ $r := $img.Resize (printf "%dx webp q78 Lanczos" .) }}
+{{ $set = $set | append (printf "%s %dw" $r.RelPermalink $r.Width) }}
+{{ $default = $r }}
+{{ end }}
+{{ end }}
+<img src="{{ $default.RelPermalink }}" srcset="{{ delimit $set ", " }}" sizes="{{ $.sizes | default "100vw" }}" width="{{ $default.Width }}" height="{{ $default.Height }}" alt="{{ $.alt }}"{{ with $.class }} class="{{ . }}"{{ end }} loading="{{ $loading }}" decoding="async"{{ with $.fetchpriority }} fetchpriority="{{ . }}"{{ end }}>
+{{ else }}
+<img src="{{ $src | relURL }}" alt="{{ $.alt }}"{{ with $.class }} class="{{ . }}"{{ end }} loading="{{ $loading }}" decoding="async"{{ with $.fetchpriority }} fetchpriority="{{ . }}"{{ end }}>
+{{ end }}

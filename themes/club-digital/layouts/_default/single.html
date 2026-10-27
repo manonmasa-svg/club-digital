@@ -70,7 +70,7 @@
 
             {{ with .Params.image }}
             <figure class="article-hero-image">
-            <img src="{{ . | relURL }}" alt="{{ with $.Params.imageAlt }}{{ . }}{{ else }}{{ $.Title }}{{ end }}" width="1200" height="675" loading="eager" fetchpriority="high">
+            {{ partial "resp-img.html" (dict "src" . "alt" ($.Params.imageAlt | default $.Title) "widths" (slice 480 800 1200) "sizes" "(max-width: 900px) 100vw, 560px" "loading" "eager" "fetchpriority" "high") }}
             {{ with $.Params.imageCredit }}<figcaption class="article-hero-image-credit">{{ . }}</figcaption>{{ end }}
             </figure>
             {{ end }}
@@ -126,7 +126,7 @@
                     <div class="related-grid">
                         {{ range . }}
                         <a href="{{ .RelPermalink }}" class="related-card">
-                            {{ with .Params.image }}<img src="{{ . | relURL }}" alt="" class="related-image" width="400" height="225" loading="lazy">{{ end }}
+                            {{ with .Params.image }}{{ partial "resp-img.html" (dict "src" . "alt" "" "class" "related-image" "widths" (slice 480 800) "sizes" "(max-width: 600px) 100vw, 300px") }}{{ end }}
                             {{ with index (.GetTerms "categories") 0 }}<span class="related-category">{{ .LinkTitle }}</span>{{ end }}
                             <h3>{{ .Title }}</h3>
                             <p>{{ .Description }}</p>

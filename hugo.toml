@@ -229,3 +229,11 @@ enableRobotsTXT = true
     target = "content"
     [module.mounts.sites.matrix]
       languages = ["en"]
+  # Images d'articles : restent dans static/ (og:image, JSON-LD) et sont aussi montees
+  # dans assets/ pour etre converties en WebP multi-tailles (partial resp-img.html)
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static/images/blog"
+    target = "assets/images/blog"

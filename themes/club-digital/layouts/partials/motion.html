@@ -32,6 +32,14 @@
     }, { passive: true });
     onScroll();
 
+    // Bandeau defilant : bouton pause / lecture (WCAG 2.2.2)
+    var ticker = document.querySelector('.ticker');
+    var tBtn = document.querySelector('.ticker-toggle');
+    if (ticker && tBtn) tBtn.addEventListener('click', function () {
+        var paused = ticker.classList.toggle('is-paused');
+        tBtn.setAttribute('aria-label', paused ? tBtn.dataset.labelPlay : tBtn.dataset.labelPause);
+    });
+
     if (toTop) toTop.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
     });
