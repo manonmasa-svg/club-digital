@@ -8,8 +8,8 @@ categories: ["AI and Automation"]
 tags: ["automation", "no-code", "artificial intelligence", "workflow", "productivity"]
 author: "thomas-durand"
 image: "/images/blog/automatiser-taches-repetitives.jpg"
-imageAlt: "Orange robotic arms lined up on an automated production line"
-imageCredit: "Photo: Simon Kadula, Unsplash (cropped)"
+imageAlt: "Laptop showing the HTML and JavaScript code of a chatbot interface"
+imageCredit: "Photo: James Harrison, Unsplash (cropped)"
 faq:
   - question: "How do you automate repetitive tasks in a business?"
     answer: "Start by listing frequent, stable tasks based on clear rules, such as copying data between two tools or sending notifications. Then choose an automation tool, build a first simple scenario and test it before extending it."

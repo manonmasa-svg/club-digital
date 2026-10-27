@@ -8,8 +8,8 @@ categories: ["IA et Automatisation"]
 tags: ["automatisation", "no-code", "intelligence artificielle", "workflow", "productivité"]
 author: "thomas-durand"
 image: "/images/blog/automatiser-taches-repetitives.jpg"
-imageAlt: "Bras robotisés orange alignés sur une chaîne de production automatisée"
-imageCredit: "Photo : Simon Kadula, Unsplash (recadrée)"
+imageAlt: "Ordinateur portable affichant le code HTML et JavaScript d'une interface de chatbot"
+imageCredit: "Photo : James Harrison, Unsplash (recadrée)"
 faq:
   - question: "Comment automatiser les tâches répétitives en entreprise ?"
     answer: "Il faut commencer par recenser les tâches fréquentes, stables et basées sur des règles claires, comme la copie de données entre deux outils ou l'envoi de notifications. On choisit ensuite un outil d'automatisation, on construit un premier scénario simple, puis on le teste avant de l'étendre."
