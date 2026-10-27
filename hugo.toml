@@ -175,7 +175,7 @@ enableRobotsTXT = true
   founding_year = "2026"
   # Adresse de contact : a renseigner une fois le domaine achete. Tant que le champ
   # est vide, les pages affichent "adresse de contact en cours de creation".
-  contact_email = ""
+  contact_email = "contact@club-digital.fr"
   expertise = ["Logiciels de gestion", "Facturation", "Comptabilité", "CRM", "Intelligence artificielle", "Automatisation", "Cybersécurité", "Cloud", "Paie", "Outils de productivité"]
   og_locale_alternate = "en_US"
 

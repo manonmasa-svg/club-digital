@@ -23,6 +23,7 @@ When someone writes to the contact address, the publisher receives their email a
 - **Purpose**: replying to the message.
 - **Recipient**: the publisher only. Messages are not sold, transferred or used for commercial purposes.
 - **Retention**: messages are kept for as long as needed to reply and follow up on the exchange.
+- **Hosting**: the mailbox is hosted by OVHcloud, which sets out its commitments in its [data protection policy](https://www.ovhcloud.com/fr/personal-data-protection/).
 
 ### Technical connection data
 

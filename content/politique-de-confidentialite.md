@@ -23,6 +23,7 @@ Lorsqu'une personne écrit à l'adresse de contact, l'éditeur reçoit son adres
 - **Finalité** : répondre au message.
 - **Destinataire** : l'éditeur uniquement. Les messages ne sont ni vendus, ni cédés, ni utilisés à des fins commerciales.
 - **Conservation** : les messages sont conservés le temps nécessaire pour y répondre et assurer le suivi de l'échange.
+- **Hébergement** : la messagerie est hébergée par OVHcloud, qui détaille ses engagements dans sa [politique de protection des données](https://www.ovhcloud.com/fr/personal-data-protection/).
 
 ### Les données techniques de connexion
 
