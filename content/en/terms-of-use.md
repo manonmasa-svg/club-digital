@@ -4,7 +4,7 @@ description: "Club Digital terms of use: access to the website, nature of the co
 translationKey: "terms"
 ---
 
-<p class="page-updated">Last updated: 18 October 2026.</p>
+<p class="page-updated">Last updated: 27 October 2026.</p>
 
 ## Purpose
 
@@ -26,7 +26,7 @@ Comparisons of software and services are based on information published by vendo
 
 Texts published on Club Digital are the property of the publisher, unless stated otherwise. Reproducing them without permission is prohibited, except for short quotes accompanied by a link to the original page.
 
-Photographs are published under a free licence. The photographer's name appears below each image.
+Photographs come from Wikimedia Commons (Creative Commons licences) and Unsplash (Unsplash License). The photographer's name appears below each image.
 
 ## Links to other websites
 

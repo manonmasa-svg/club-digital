@@ -4,7 +4,7 @@ description: "Conditions générales d'utilisation de Club Digital : accès au s
 translationKey: "terms"
 ---
 
-<p class="page-updated">Dernière mise à jour : 18 octobre 2026.</p>
+<p class="page-updated">Dernière mise à jour : 27 octobre 2026.</p>
 
 ## Objet
 
@@ -26,7 +26,7 @@ Les comparatifs de logiciels et de services reposent sur les informations publi�
 
 Les textes publiés sur Club Digital sont la propriété de l'éditeur, sauf mention contraire. Leur reproduction sans autorisation est interdite, à l'exception des courtes citations accompagnées d'un lien vers la page d'origine.
 
-Les photographies sont publiées sous licence libre. Le nom du photographe figure sous chaque image.
+Les photographies proviennent de Wikimedia Commons (licences Creative Commons) et d'Unsplash (licence Unsplash). Le nom du photographe figure sous chaque image.
 
 ## Liens vers d'autres sites
 
