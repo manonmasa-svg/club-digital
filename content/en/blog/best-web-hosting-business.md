@@ -8,8 +8,8 @@ categories: ["Comparisons"]
 tags: ["web hosting", "comparison", "shared hosting", "website", "small business"]
 author: "thomas-durand"
 image: "/images/blog/meilleur-hebergeur-web.jpg"
-imageAlt: "Data centre room with server racks and network cables hanging from the ceiling"
-imageCredit: "Photo: Taylor Vick, Unsplash (cropped)"
+imageAlt: "Laptop showing a website home page, next to a mug on a wooden desk"
+imageCredit: "Photo: Carriza Maiquez, Unsplash (cropped)"
 faq:
   - question: "What is the best web host for a business website?"
     answer: "It depends on the need. Based on the offer pages checked on 29 October 2026, o2switch offers unlimited websites, storage and mailboxes from €7 excl. VAT per month with its Grow plan, in its own data centres in France. OVHcloud shows the lowest entry price (Starter at €1.59 excl. VAT per month in the first year), with limited resources. Hostinger starts at €2.49 per month for a 48-month prepaid commitment. Infomaniak offers 250 GB and 20 websites from €5.75 excl. VAT per month, with hosting in Switzerland."
