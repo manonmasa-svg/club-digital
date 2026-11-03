@@ -2,7 +2,7 @@
 title: "Quel est le meilleur logiciel de comptabilité ?"
 translationKey: "best-accounting-software"
 date: 2026-10-27
-lastmod: 2026-10-27
+lastmod: 2026-11-03
 description: "Meilleur logiciel de comptabilité : Indy, Pennylane, Sage 50 et Tiime comparés : prix, déclarations et facture électronique."
 categories: ["Comparatifs"]
 tags: ["logiciel de comptabilité", "comparatif", "facture électronique", "TPE", "indépendants"]
@@ -52,6 +52,8 @@ Choisir le **meilleur logiciel de comptabilité** dépend d'abord d'une question
 La facture électronique change aussi la donne. Selon [economie.gouv.fr](https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises) (page consultée le 27 octobre 2026), toutes les entreprises doivent pouvoir recevoir des factures électroniques depuis le 1er septembre 2026, et les PME et micro-entreprises devront les émettre à partir du 1er septembre 2027.
 
 Ces factures transitent par des plateformes agréées par l'État. La DGFiP publie la [liste des plateformes agréées](https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees) sur impots.gouv.fr. Dans la version consultée le 27 octobre 2026 (page mise à jour le 13 octobre 2026), Indy, Pennylane, Sage et Tiime figurent tous les quatre dans la liste des opérateurs ayant satisfait à l'ensemble des conditions, tests d'interopérabilité compris.
+
+Le rôle de ces opérateurs, la différence avec une solution compatible et la façon de les choisir sont détaillés dans l'article [Facture électronique : qu'est-ce qu'une plateforme agréée ?]({{< relref "plateforme-agreee-facture-electronique.md" >}}).
 
 ### Les critères retenus pour comparer
 

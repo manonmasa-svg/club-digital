@@ -2,7 +2,7 @@
 title: "What is the best CRM for a small business?"
 translationKey: "best-crm-small-business"
 date: 2026-10-29T08:00:00+01:00
-lastmod: 2026-10-29T08:00:00+01:00
+lastmod: 2026-11-03
 description: "Best CRM for a small business in France: Axonaut, HubSpot, Pipedrive and Sellsy compared on price, commitment and invoicing."
 categories: ["Comparisons"]
 tags: ["CRM", "comparison", "small business", "sales software", "e-invoicing"]
@@ -66,6 +66,8 @@ For a small business, two constraints weigh more than elsewhere: the budget per 
 According to [economie.gouv.fr](https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises) (page in French, consulted on 27 October 2026), all businesses must be able to receive electronic invoices since 1 September 2026, and small and micro businesses will have to issue them from 1 September 2027.
 
 A CRM that also produces invoices therefore has to go through a platform approved by the State. The DGFiP publishes the [list of approved platforms](https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees). In the version consulted on 27 October 2026, Axonaut and Sellsy appear on the list of operators that have met all conditions. HubSpot and Pipedrive were not found on it.
+
+The role of these operators, how they differ from compatible software and how to choose one are covered in the article [E-invoicing in France: what is an approved platform?]({{< relref "approved-platform-e-invoicing-france.md" >}}).
 
 Criteria specific to invoicing are covered in the guide to choosing [invoicing software]({{< relref "invoicing-software-criteria.md" >}}).
 

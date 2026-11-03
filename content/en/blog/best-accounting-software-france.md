@@ -2,7 +2,7 @@
 title: "What is the best accounting software in France?"
 translationKey: "best-accounting-software"
 date: 2026-10-27
-lastmod: 2026-10-27
+lastmod: 2026-11-03
 description: "Best accounting software in France: Indy, Pennylane, Sage 50 and Tiime compared on prices, tax filings and e-invoicing."
 categories: ["Comparisons"]
 tags: ["accounting software", "comparison", "e-invoicing", "small business", "freelancers"]
@@ -52,6 +52,8 @@ Choosing the **best accounting software** first depends on a simple question: wh
 E-invoicing is also changing the picture in France. According to [economie.gouv.fr](https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises) (page in French, consulted on 27 October 2026), all businesses must be able to receive electronic invoices since 1 September 2026, and small and micro businesses will have to issue them from 1 September 2027.
 
 These invoices go through platforms approved by the State. The DGFiP publishes the [list of approved platforms](https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees) on impots.gouv.fr. In the version consulted on 27 October 2026 (page updated on 13 October 2026), Indy, Pennylane, Sage and Tiime all appear on the list of operators that have met all conditions, interoperability tests included.
+
+The role of these operators, how they differ from compatible software and how to choose one are covered in the article [E-invoicing in France: what is an approved platform?]({{< relref "approved-platform-e-invoicing-france.md" >}}).
 
 ### The criteria used for the comparison
 

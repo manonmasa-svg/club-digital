@@ -2,7 +2,7 @@
 title: "Quel est le meilleur CRM pour une petite entreprise ?"
 translationKey: "best-crm-small-business"
 date: 2026-10-29T08:00:00+01:00
-lastmod: 2026-10-29T08:00:00+01:00
+lastmod: 2026-11-03
 description: "Meilleur CRM pour petite entreprise : Axonaut, HubSpot, Pipedrive et Sellsy comparés sur les prix, l'engagement et la facturation."
 categories: ["Comparatifs"]
 tags: ["CRM", "comparatif", "TPE", "logiciel commercial", "facture électronique"]
@@ -66,6 +66,8 @@ Pour une petite structure, deux contraintes pèsent plus qu'ailleurs : le budget
 Selon [economie.gouv.fr](https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises) (page consultée le 27 octobre 2026), toutes les entreprises doivent pouvoir recevoir des factures électroniques depuis le 1er septembre 2026, et les PME et micro-entreprises devront les émettre à partir du 1er septembre 2027.
 
 Un CRM qui produit aussi les factures doit donc passer par une plateforme agréée par l'État. La DGFiP publie la [liste des plateformes agréées](https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees). Dans la version consultée le 27 octobre 2026, Axonaut et Sellsy figurent dans la liste des opérateurs ayant satisfait à l'ensemble des conditions. HubSpot et Pipedrive n'y ont pas été trouvés.
+
+Le rôle de ces opérateurs, la différence avec une solution compatible et la façon de les choisir sont détaillés dans l'article [Facture électronique : qu'est-ce qu'une plateforme agréée ?]({{< relref "plateforme-agreee-facture-electronique.md" >}}).
 
 Les critères propres à la facturation sont détaillés dans le guide pour choisir un [logiciel de facturation]({{< relref "logiciel-de-facturation-criteres.md" >}}).
 
