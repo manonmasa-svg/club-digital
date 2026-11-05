@@ -1,10 +1,10 @@
 ---
 title: "Conditions générales d'utilisation"
-description: "Conditions générales d'utilisation de Club Digital : accès au site, nature des contenus, comparatifs, propriété intellectuelle et liens."
+description: "Conditions générales d'utilisation de Club Digital : accès au site, nature des contenus, comparatifs, partenariats, propriété intellectuelle et liens."
 translationKey: "terms"
 ---
 
-<p class="page-updated">Dernière mise à jour : 27 octobre 2026.</p>
+<p class="page-updated">Dernière mise à jour : 5 novembre 2026.</p>
 
 ## Objet
 
@@ -16,11 +16,15 @@ Le site est accessible gratuitement, sans inscription. L'éditeur s'efforce de l
 
 ## Nature des contenus
 
-Les articles de Club Digital ont une vocation d'information générale sur les logiciels, l'intelligence artificielle et les outils numériques. Ils ne constituent ni un conseil comptable, ni un conseil juridique, ni un audit de sécurité. Pour une situation particulière, il est recommandé de consulter un professionnel qualifié.
+Les articles de Club Digital ont une vocation d'information générale sur les logiciels, l'intelligence artificielle et les outils numériques. Ils ne constituent ni un conseil comptable, ni un conseil juridique, ni un conseil en droit social ou en paie, ni un audit de sécurité. Pour une situation particulière, il est recommandé de consulter un professionnel qualifié.
 
 ## Comparatifs
 
 Les comparatifs de logiciels et de services reposent sur les informations publiées par les éditeurs à la date du relevé, indiquée dans l'article. Les prix, les offres et les fonctionnalités peuvent changer : ils sont à confirmer auprès de chaque éditeur avant tout achat.
+
+## Partenariats
+
+Un contenu réalisé dans le cadre d'un partenariat rémunéré est signalé comme tel. Les comparatifs restent rédigés selon la [ligne éditoriale]({{< relref "ligne-editoriale.md" >}}) du site.
 
 ## Propriété intellectuelle
 

@@ -1,10 +1,10 @@
 ---
 title: "Terms of use"
-description: "Club Digital terms of use: access to the website, nature of the content, comparisons, intellectual property and links."
+description: "Club Digital terms of use: access to the website, nature of the content, comparisons, partnerships, intellectual property and links."
 translationKey: "terms"
 ---
 
-<p class="page-updated">Last updated: 27 October 2026.</p>
+<p class="page-updated">Last updated: 5 November 2026.</p>
 
 ## Purpose
 
@@ -16,11 +16,15 @@ The website is free to access, without registration. The publisher strives to ke
 
 ## Nature of the content
 
-Club Digital articles are general information about software, artificial intelligence and digital tools. They are neither accounting advice, nor legal advice, nor a security audit. For a specific situation, consulting a qualified professional is recommended.
+Club Digital articles are general information about software, artificial intelligence and digital tools. They are neither accounting advice, nor legal advice, nor employment law or payroll advice, nor a security audit. For a specific situation, consulting a qualified professional is recommended.
 
 ## Comparisons
 
 Comparisons of software and services are based on information published by vendors on the date of the check, stated in the article. Prices, plans and features may change: they should be confirmed with each vendor before any purchase.
+
+## Partnerships
+
+Content produced as part of a paid partnership is identified as such. Comparisons are still written in line with the site's [editorial policy]({{< relref "editorial-policy.md" >}}).
 
 ## Intellectual property
 
