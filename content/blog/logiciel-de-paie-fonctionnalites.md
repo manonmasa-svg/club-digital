@@ -2,7 +2,7 @@
 title: "Logiciel de paie : les fonctionnalités essentielles"
 translationKey: "payroll-software-features"
 date: 2026-10-18
-lastmod: 2026-10-27
+lastmod: 2026-11-09
 description: "Logiciel de paie : bulletins, DSN, absences, export comptable et sécurité des données. Les fonctionnalités à vérifier avant de choisir."
 categories: ["RH et Paie"]
 tags: ["logiciel de paie", "DSN", "bulletin de paie", "SIRH", "RH"]
@@ -53,7 +53,7 @@ Un bon logiciel accompagne chacune de ces étapes, avec des alertes en cas d'ano
 
 - **Édition des bulletins** avec gestion des variables (heures supplémentaires, primes).
 - **Gestion des absences** : congés, arrêts, absences diverses.
-- **Déclarations sociales** : génération de la DSN.
+- **Déclarations sociales** : génération de la DSN. Les échéances, les DSN événementielles et les pénalités sont expliquées dans le guide sur la [DSN pour une petite entreprise]({{< relref "dsn-petite-entreprise.md" >}}).
 - **Export comptable** vers le logiciel de comptabilité ou le [logiciel de facturation]({{< relref "logiciel-de-facturation-criteres.md" >}}) quand il intègre une partie comptable.
 - **Espace salarié** pour consulter les bulletins en ligne.
 

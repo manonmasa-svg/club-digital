@@ -2,7 +2,7 @@
 title: "Payroll software: the essential features"
 translationKey: "payroll-software-features"
 date: 2026-10-18
-lastmod: 2026-10-27
+lastmod: 2026-11-09
 description: "Payroll software: payslips, French DSN reporting, absences, accounting export and data security. The features to check before choosing."
 categories: ["HR and Payroll"]
 tags: ["payroll software", "DSN", "payslip", "HRIS", "HR"]
@@ -53,7 +53,7 @@ Good software supports each of these steps, with alerts for anomalies and a hist
 
 - **Payslip production** with variable pay (overtime, bonuses).
 - **Absence management**: leave, sick leave, other absences.
-- **Social security filings**: generating the DSN.
+- **Social security filings**: generating the DSN. Deadlines, event reports and penalties are explained in the guide to the [DSN for a small business in France]({{< relref "dsn-small-business-france.md" >}}).
 - **Accounting export** to the accounting software, or to the [invoicing software]({{< relref "invoicing-software-criteria.md" >}}) when it includes an accounting module.
 - **Employee portal** to view payslips online.
 
