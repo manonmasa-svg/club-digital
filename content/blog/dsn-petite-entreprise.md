@@ -2,7 +2,7 @@
 title: "Comment fonctionne la DSN pour une petite entreprise ?"
 translationKey: "dsn-small-business"
 date: 2026-11-06T08:00:00+01:00
-lastmod: 2026-11-06T08:00:00+01:00
+lastmod: 2026-11-13
 description: "DSN petite entreprise : échéance du 15, signalements d'événements, dépôt sur net-entreprises, sanctions et outils pour la produire."
 categories: ["RH et Paie"]
 tags: ["DSN", "déclaration sociale nominative", "paie", "TPE", "cotisations sociales"]
@@ -96,7 +96,7 @@ Ces signalements ont un effet direct pour le salarié. L'attestation de salaire 
 
 ### Avec un logiciel de paie
 
-Service Public Entreprendre indique qu'un logiciel de paie compatible DSN est nécessaire. Le logiciel traduit les informations du bulletin de paie en données DSN. Les fonctions à attendre d'un tel outil sont détaillées dans l'article [Logiciel de paie : les fonctionnalités essentielles]({{< relref "logiciel-de-paie-fonctionnalites.md" >}}).
+Service Public Entreprendre indique qu'un logiciel de paie compatible DSN est nécessaire. Le logiciel traduit les informations du bulletin de paie en données DSN. Les fonctions à attendre d'un tel outil sont détaillées dans l'article [Logiciel de paie : les fonctionnalités essentielles]({{< relref "logiciel-de-paie-fonctionnalites.md" >}}). Les prix et les modes de fonctionnement de plusieurs solutions sont comparés dans l'article sur le [meilleur logiciel de paie pour une PME]({{< relref "meilleur-logiciel-de-paie.md" >}}).
 
 Pour les salariés du régime général, la DSN se dépose sur le site net-entreprises.fr, après une inscription préalable. Pour les salariés du régime agricole, elle se dépose sur le site de la MSA.
 

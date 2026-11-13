@@ -2,7 +2,7 @@
 title: "Logiciel de paie : les fonctionnalités essentielles"
 translationKey: "payroll-software-features"
 date: 2026-10-18
-lastmod: 2026-11-09
+lastmod: 2026-11-13
 description: "Logiciel de paie : bulletins, DSN, absences, export comptable et sécurité des données. Les fonctionnalités à vérifier avant de choisir."
 categories: ["RH et Paie"]
 tags: ["logiciel de paie", "DSN", "bulletin de paie", "SIRH", "RH"]
@@ -74,7 +74,7 @@ Pour un logiciel de paie, cela se traduit par deux besoins concrets : un espace 
 | Intégrations | Le logiciel se connecte-t-il au SIRH et à la comptabilité ? |
 | Accompagnement | Quelle aide pour le paramétrage initial ? |
 
-Le paramétrage initial mérite une attention particulière. Il détermine la justesse de tous les bulletins qui suivent. Beaucoup d'entreprises font réaliser ce paramétrage ou le contrôle des premiers mois par un professionnel de la paie, avant de produire les bulletins en autonomie.
+Le paramétrage initial mérite une attention particulière. Il détermine la justesse de tous les bulletins qui suivent. Beaucoup d'entreprises font réaliser ce paramétrage ou le contrôle des premiers mois par un professionnel de la paie, avant de produire les bulletins en autonomie. Certaines solutions prennent en charge la production des bulletins : les offres, les prix et ce mode délégué sont comparés dans l'article sur le [meilleur logiciel de paie pour une PME]({{< relref "meilleur-logiciel-de-paie.md" >}}).
 
 ## Logiciel de paie, SIRH : quelle différence
 

@@ -2,7 +2,7 @@
 title: "Payroll software: the essential features"
 translationKey: "payroll-software-features"
 date: 2026-10-18
-lastmod: 2026-11-09
+lastmod: 2026-11-13
 description: "Payroll software: payslips, French DSN reporting, absences, accounting export and data security. The features to check before choosing."
 categories: ["HR and Payroll"]
 tags: ["payroll software", "DSN", "payslip", "HRIS", "HR"]
@@ -74,7 +74,7 @@ For payroll software, this translates into two concrete needs: a secure space wh
 | Integrations | Does the software connect to the HRIS and accounting? |
 | Support | What help is available for the initial setup? |
 
-The initial configuration deserves particular care. It determines the accuracy of every payslip that follows. Many businesses have this setup, or the review of the first months, carried out by a payroll professional before producing payslips on their own.
+The initial configuration deserves particular care. It determines the accuracy of every payslip that follows. Many businesses have this setup, or the review of the first months, carried out by a payroll professional before producing payslips on their own. Some solutions take over payslip production: plans, prices and this delegated model are compared in the article on the [best payroll software in France]({{< relref "best-payroll-software-france.md" >}}).
 
 ## Payroll software and HRIS: what is the difference
 

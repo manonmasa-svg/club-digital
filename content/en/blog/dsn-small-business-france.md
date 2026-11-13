@@ -2,7 +2,7 @@
 title: "How does the DSN work for a small business in France?"
 translationKey: "dsn-small-business"
 date: 2026-11-06T08:00:00+01:00
-lastmod: 2026-11-06T08:00:00+01:00
+lastmod: 2026-11-13
 description: "French DSN for small businesses: the 15th deadline, event reports, filing on net-entreprises, penalties and tools to produce it."
 categories: ["HR and Payroll"]
 tags: ["DSN", "French payroll filing", "payroll", "small business", "social contributions"]
@@ -96,7 +96,7 @@ These reports have a direct effect for the employee. The salary certificate sent
 
 ### With payroll software
 
-Service Public Entreprendre states that DSN-compatible payroll software is required. The software converts the information on the payslip into DSN data. The features to expect from such a tool are covered in the article [Payroll software: the essential features]({{< relref "payroll-software-key-features.md" >}}).
+Service Public Entreprendre states that DSN-compatible payroll software is required. The software converts the information on the payslip into DSN data. The features to expect from such a tool are covered in the article [Payroll software: the essential features]({{< relref "payroll-software-key-features.md" >}}). The prices and operating models of several solutions are compared in the article on the [best payroll software in France]({{< relref "best-payroll-software-france.md" >}}).
 
 For employees under the general social security scheme, the DSN is filed on the net-entreprises.fr website, after prior registration. For employees under the agricultural scheme, it is filed on the MSA website.
 
