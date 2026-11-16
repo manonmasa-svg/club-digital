@@ -8,8 +8,8 @@ categories: ["Cybersécurité"]
 tags: ["phishing", "hameçonnage", "cybersécurité", "PME", "e-mail"]
 author: "thomas-durand"
 image: "/images/blog/reconnaitre-eviter-phishing-entreprise.jpg"
-imageAlt: "Lettres en bois formant le mot PHISHING sur une table, devant une plante"
-imageCredit: "Photo : Markus Winkler, Unsplash (recadrée)"
+imageAlt: "Mains d'un employé en chemise tapant sur un ordinateur portable dans un bureau, à côté d'une tasse"
+imageCredit: "Photo : Mina Rad, Unsplash (recadrée)"
 faq:
   - question: "Comment reconnaître et éviter le phishing en entreprise ?"
     answer: "Un message de phishing se reconnaît à plusieurs signaux recensés par Cybermalveillance.gouv.fr : adresse d'expédition fantaisiste, objet alarmiste ou trop alléchant, demande inhabituelle, demande d'informations confidentielles, fautes de français, incitation à cliquer sur un lien ou une pièce jointe. Pour l'éviter, il ne faut jamais communiquer de mot de passe ou de données bancaires par message, survoler les liens avant de cliquer, vérifier l'adresse du site, contacter l'expéditeur par un autre canal en cas de doute, et activer la double authentification."

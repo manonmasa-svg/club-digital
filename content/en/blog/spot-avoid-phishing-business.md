@@ -8,8 +8,8 @@ categories: ["Cybersecurity"]
 tags: ["phishing", "cybersecurity", "small business", "email security", "fraud"]
 author: "thomas-durand"
 image: "/images/blog/reconnaitre-eviter-phishing-entreprise.jpg"
-imageAlt: "Wooden letter tiles spelling the word PHISHING on a table, in front of a plant"
-imageCredit: "Photo: Markus Winkler, Unsplash (cropped)"
+imageAlt: "Hands of an employee in a shirt typing on a laptop in an office, next to a mug"
+imageCredit: "Photo: Mina Rad, Unsplash (cropped)"
 faq:
   - question: "How can a business spot and avoid phishing?"
     answer: "A phishing message can be recognised by several signs listed by Cybermalveillance.gouv.fr, the French government's cyber assistance service: an odd sender address, an alarming or overly tempting subject, an unusual request, a request for confidential information, surprising spelling mistakes, and pressure to click a link or open an attachment. To avoid it, never share a password or bank details by message, hover over links before clicking, check the website address, contact the sender through another channel if in doubt, and enable two-factor authentication."
