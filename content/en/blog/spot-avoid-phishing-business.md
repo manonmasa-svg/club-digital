@@ -1,8 +1,8 @@
 ---
 title: "How can a business spot and avoid phishing?"
 translationKey: "spot-avoid-phishing-business"
-date: 2026-11-18T08:00:00+01:00
-lastmod: 2026-11-18T08:00:00+01:00
+date: 2026-11-17T20:30:00+01:00
+lastmod: 2026-11-17T20:30:00+01:00
 description: "Phishing in business: warning signs, protective habits, what to do after a click and where to report a fraudulent message in France."
 categories: ["Cybersecurity"]
 tags: ["phishing", "cybersecurity", "small business", "email security", "fraud"]
