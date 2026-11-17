@@ -4,8 +4,10 @@ on:
   push:
     branches: ["main"]
   schedule:
-    # Tous les jours a 6 h 05 et 7 h 05 UTC (soit 8 h 05 a Paris, ete comme hiver) : publie les articles programmes
+    # Publie les articles programmes. GitHub retarde souvent les crons de plusieurs heures :
+    # on multiplie les creneaux le matin (6 h a 11 h UTC), a des minutes peu demandees (17 et 43)
     - cron: "5 6,7 * * *"
+    - cron: "17,43 6-11 * * *"
   workflow_dispatch:
 
 permissions:
