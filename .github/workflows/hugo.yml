@@ -22,6 +22,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      indexnow_urls: ${{ steps.indexnow.outputs.urls }}
     steps:
       - name: Install Hugo CLI
         run: |
@@ -44,6 +46,42 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+      # IndexNow : compare le sitemap en ligne (avant deploiement) au sitemap construit,
+      # et garde seulement les URL nouvelles ou dont le lastmod a change
+      - name: List changed URLs for IndexNow
+        id: indexnow
+        continue-on-error: true
+        env:
+          SITE: https://club-digital.fr
+        run: |
+          mkdir -p "${{ runner.temp }}/live"
+          ok=1
+          for lang in fr en; do
+            curl -sfL "$SITE/$lang/sitemap.xml" -o "${{ runner.temp }}/live/$lang.xml" || ok=0
+          done
+          if [ "$ok" != "1" ]; then
+            echo "Sitemap en ligne illisible : aucun envoi IndexNow"
+            echo "urls=[]" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          python3 - "${{ runner.temp }}/live" public >> "$GITHUB_OUTPUT" <<'PY'
+          import json, sys, xml.etree.ElementTree as ET
+          ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          def entries(path):
+              out = {}
+              for url in ET.parse(path).getroot().findall("s:url", ns):
+                  loc = url.findtext("s:loc", default="", namespaces=ns).strip()
+                  out[loc] = url.findtext("s:lastmod", default="", namespaces=ns).strip()
+              return out
+          live_dir, public_dir = sys.argv[1], sys.argv[2]
+          changed = []
+          for lang in ("fr", "en"):
+              old = entries(f"{live_dir}/{lang}.xml")
+              new = entries(f"{public_dir}/{lang}/sitemap.xml")
+              changed += [loc for loc, mod in new.items() if old.get(loc) != mod]
+          print("urls=" + json.dumps(changed[:1000]))
+          PY
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -59,3 +97,22 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Previent Bing (et les autres moteurs IndexNow) des URL nouvelles ou modifiees
+  indexnow:
+    runs-on: ubuntu-latest
+    needs: [build, deploy]
+    continue-on-error: true
+    if: needs.build.outputs.indexnow_urls != '[]' && needs.build.outputs.indexnow_urls != ''
+    steps:
+      - name: Submit URLs to IndexNow
+        env:
+          URLS: ${{ needs.build.outputs.indexnow_urls }}
+          KEY: 42f8e66f80608e5bc905f00ef06a05f7
+        run: |
+          payload=$(jq -n --argjson urls "$URLS" --arg key "$KEY" \
+            '{host: "club-digital.fr", key: $key, keyLocation: ("https://club-digital.fr/" + $key + ".txt"), urlList: $urls}')
+          echo "$payload" | jq -r '.urlList[]'
+          code=$(curl -s -o /dev/null -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' -d "$payload")
+          echo "Reponse IndexNow : $code"
