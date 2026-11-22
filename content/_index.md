@@ -2,6 +2,7 @@
 title: "Club Digital"
 description: "Le blog qui décrypte les logiciels, l'IA et les outils numériques : facturation, CRM, automatisation, cybersécurité et productivité."
 translationKey: "home"
+aliases: ["/home/"]
 faq:
   - question: "Qu'est-ce qu'un logiciel SaaS ?"
     answer: "Un logiciel SaaS (Software as a Service) s'utilise en ligne, depuis un navigateur ou une application, sans installation sur un serveur de l'entreprise. L'éditeur héberge le logiciel, assure les mises à jour et la maintenance, et le client paie généralement un abonnement selon le nombre d'utilisateurs ou les fonctions retenues."
