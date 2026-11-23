@@ -1,5 +1,5 @@
 ---
-title: "Comparisons"
+title: "SaaS comparisons"
 description: "Software and digital tool comparisons: criteria, tables and points to check before choosing."
 summary: "Software and digital tools compared: criteria, tables and points to check before choosing."
 translationKey: "cat-comparisons"

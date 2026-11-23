@@ -2,7 +2,7 @@
 
 > {{ site.Params.description }}
 
-Club Digital est un blog bilingue (français à la racine, anglais sous /en/) consacré aux logiciels, à l'intelligence artificielle et aux outils numériques utilisés par les entreprises. Les prix et fonctionnalités cités sont relevés sur les sites des éditeurs, avec la date du relevé.
+Club Digital est un média bilingue (français à la racine, anglais sous /en/) consacré aux logiciels SaaS B2B : facturation, comptabilité, CRM, RH et paie, cybersécurité, collaboration et IA. Les prix et fonctionnalités cités sont relevés sur les sites des éditeurs, avec la date du relevé.
 
 ## Rubriques
 {{ range (where site.Pages "Kind" "term").ByWeight }}{{ if eq .Data.Plural "categories" }}

@@ -1,19 +1,19 @@
 ---
 title: "À propos"
-description: "Club Digital est un blog consacré aux logiciels, à l'IA et aux outils numériques utilisés par les entreprises."
+description: "Club Digital est un média consacré aux logiciels SaaS B2B : comparatifs et guides pour choisir les outils en ligne des entreprises."
 translationKey: "about"
 ---
 
-## Un blog sur les outils numériques des entreprises
+## Un média sur les logiciels SaaS des entreprises
 
-Club Digital décrypte les logiciels, l'intelligence artificielle et les outils numériques qui structurent le quotidien des entreprises : facturation, comptabilité, CRM, automatisation, cybersécurité, hébergement, paie et outils de collaboration.
+Club Digital compare et décrypte les logiciels SaaS B2B, c'est-à-dire les outils en ligne utilisés par les entreprises sur abonnement : facturation, comptabilité, CRM, RH et paie, cybersécurité, hébergement, collaboration et IA.
 
 Le site s'adresse aux dirigeants de TPE et de PME, aux indépendants, aux équipes administratives, marketing et RH, et plus largement à toutes les personnes qui doivent choisir, déployer ou mieux utiliser un outil numérique.
 
 ## Ce que le site publie
 
 - Des guides pour comprendre une famille d'outils et ses usages.
-- Des comparatifs entre logiciels et services, à partir d'informations relevées sur les sites des éditeurs.
+- Des comparatifs de logiciels SaaS, à partir d'informations relevées sur les sites des éditeurs.
 - Des définitions pour comprendre les sigles et les notions techniques.
 - Des conseils pratiques pour sécuriser, automatiser et organiser le travail.
 
@@ -26,6 +26,7 @@ Le site s'adresse aux dirigeants de TPE et de PME, aux indépendants, aux équip
 - [Cloud et Hébergement]({{< relref "/categories/cloud-et-hébergement" >}})
 - [RH et Paie]({{< relref "/categories/rh-et-paie" >}})
 - [Productivité et Collaboration]({{< relref "/categories/productivité-et-collaboration" >}})
+- [Comparatifs SaaS]({{< relref "/categories/comparatifs" >}})
 
 ## Comment les articles sont écrits
 

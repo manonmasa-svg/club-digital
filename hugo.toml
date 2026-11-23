@@ -21,8 +21,8 @@ enableRobotsTXT = true
     weight = 1
     title = "Club Digital"
     [languages.fr.params]
-      description = "Le blog qui décrypte les logiciels, l'IA et les outils numériques : facturation, CRM, automatisation, cybersécurité et productivité."
-      tagline = "Logiciels, IA et outils numériques, décryptés"
+      description = "Le média qui compare et décrypte les logiciels SaaS pour les entreprises : facturation, CRM, RH, cybersécurité, productivité et IA."
+      tagline = "Comparatifs de logiciels SaaS pour entreprises"
 
   [languages.en]
     locale = "en-US"
@@ -30,8 +30,8 @@ enableRobotsTXT = true
     weight = 2
     title = "Club Digital"
     [languages.en.params]
-      description = "The blog that breaks down software, AI and digital tools: invoicing, CRM, automation, cybersecurity and productivity."
-      tagline = "Software, AI and digital tools, explained"
+      description = "The media site that compares and explains SaaS software for businesses: invoicing, CRM, HR, cybersecurity, productivity and AI."
+      tagline = "SaaS software comparisons for businesses"
 
 # Menu principal FR
 [[languages.fr.menus.main]]
@@ -64,7 +64,7 @@ enableRobotsTXT = true
   weight = 7
 
 [[languages.fr.menus.main]]
-  name = "Comparatifs"
+  name = "Comparatifs SaaS"
   pageRef = "/categories/comparatifs"
   weight = 8
 [[languages.fr.menus.main]]
@@ -137,7 +137,7 @@ enableRobotsTXT = true
   weight = 7
 
 [[languages.en.menus.main]]
-  name = "Comparisons"
+  name = "SaaS comparisons"
   pageRef = "/categories/comparisons"
   weight = 8
 [[languages.en.menus.main]]
@@ -186,7 +186,7 @@ enableRobotsTXT = true
   # Adresse de contact : a renseigner une fois le domaine achete. Tant que le champ
   # est vide, les pages affichent "adresse de contact en cours de creation".
   contact_email = "contact@club-digital.fr"
-  expertise = ["Logiciels de gestion", "Facturation", "Comptabilité", "CRM", "Intelligence artificielle", "Automatisation", "Cybersécurité", "Cloud", "Paie", "Outils de productivité"]
+  expertise = ["Logiciels SaaS B2B", "Logiciels de gestion", "Facturation", "Comptabilité", "CRM", "Logiciels RH et paie", "Cybersécurité", "Outils de collaboration", "Intelligence artificielle", "Automatisation", "Cloud"]
   og_locale_alternate = "en_US"
 
 [sitemap]
