@@ -2,7 +2,7 @@
 title: "Slack, Microsoft Teams ou Google Chat : quelle messagerie d'équipe choisir ?"
 translationKey: "slack-teams-google-chat"
 date: 2026-11-11T08:00:00+01:00
-lastmod: 2026-11-11T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Messagerie d'équipe : Slack, Microsoft Teams et Google Chat comparés sur les prix, l'offre gratuite, l'historique et les intégrations."
 categories: ["Productivité et Collaboration"]
 tags: ["messagerie d'équipe", "Slack", "Microsoft Teams", "Google Chat", "comparatif"]
@@ -136,6 +136,8 @@ Google Chat est déjà disponible dans chaque compte Workspace. Il couvre l'esse
 Slack se distingue par ses intégrations illimitées dès Pro, son générateur de flux de travail et les canaux partagés avec des entreprises extérieures. Pour relier la messagerie à d'autres logiciels, le comparatif [Zapier, Make ou n8n]({{< relref "zapier-make-ou-n8n.md" >}}) aide à choisir l'outil d'automatisation adapté.
 
 ## Comment choisir sa messagerie d'équipe en 5 étapes
+
+Ces messageries sont toutes proposées sous forme de [logiciel SaaS]({{< relref "logiciel-saas-definition.md" >}}), un modèle dont le fonctionnement et les prix sont détaillés dans un guide dédié.
 
 1. **Regarder la suite bureautique déjà utilisée** : Microsoft 365 ou Google Workspace inclut peut-être déjà une messagerie.
 2. **Compter les utilisateurs** et calculer le coût annuel réel, engagement compris.

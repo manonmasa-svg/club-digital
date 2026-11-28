@@ -2,7 +2,7 @@
 title: "What is the best invoicing software in France?"
 translationKey: "best-invoicing-software"
 date: 2026-11-17T08:00:00+01:00
-lastmod: 2026-11-17T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Best invoicing software in France: Abby, Evoliz and Henrri compared on pricing, e-invoicing and approved platform status."
 categories: ["Comparisons"]
 tags: ["invoicing software", "comparison", "e-invoicing", "small business", "freelancers"]
@@ -127,6 +127,8 @@ Abby Plus, at €15 excl. VAT per month, combines VAT invoicing, reminders, e-si
 Evoliz suits businesses that also want to process supplier invoices, pay suppliers and track cash flow, while preparing the accountant's work.
 
 ## How to choose invoicing software in 5 steps
+
+The criteria common to all [SaaS software]({{< relref "what-is-saas-software.md" >}}), such as subscription billing or data portability, are covered in a separate guide; the steps below focus on invoicing.
 
 1. **Check the link with an approved platform** on the official DGFiP list.
 2. **Estimate the volume** of quotes and invoices, and the number of users.

@@ -2,7 +2,7 @@
 title: "What is the best accounting software in France?"
 translationKey: "best-accounting-software"
 date: 2026-10-27
-lastmod: 2026-11-03
+lastmod: 2026-11-28
 description: "Best accounting software in France: Indy, Pennylane, Sage 50 and Tiime compared on prices, tax filings and e-invoicing."
 categories: ["Comparisons"]
 tags: ["accounting software", "comparison", "e-invoicing", "small business", "freelancers"]
@@ -134,6 +134,8 @@ Sage 50 fits this case well: classic accounting software, several users, a low e
 Tiime and Pennylane suit companies whose books are kept by a firm. Tiime stands out with free invoicing, Pennylane with its spending and cash flow management features. It is worth asking first which tool the firm uses.
 
 ## How to choose your accounting software
+
+Like most current accounting tools, these four solutions run online: how [SaaS software]({{< relref "what-is-saas-software.md" >}}) works and how it is priced is covered in a dedicated guide.
 
 1. **Decide who keeps the books**: the owner, an employee or a firm.
 2. **Check the legal status covered**: Indy's and Pennylane's plans vary by status.

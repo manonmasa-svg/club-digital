@@ -2,7 +2,7 @@
 title: "Quel est le meilleur logiciel RH pour une PME ?"
 translationKey: "best-hr-software"
 date: 2026-11-24T08:00:00+01:00
-lastmod: 2026-11-24T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Meilleur logiciel RH pour PME : Lucca, Eurécia, Factorial et PayFit comparés sur les prix, les modules et l'engagement."
 categories: ["Comparatifs"]
 tags: ["logiciel RH", "SIRH", "comparatif", "PME", "congés"]
@@ -138,6 +138,8 @@ Eurécia affiche un prix d'entrée par pack de 10 utilisateurs et un essai gratu
 PayFit réunit la production de la paie et les fonctions RH. Le coût par salarié est plus élevé, mais il remplace deux outils et une partie du travail administratif.
 
 ## Comment choisir son logiciel RH en 5 étapes
+
+Le fonctionnement d'un [logiciel SaaS]({{< relref "logiciel-saas-definition.md" >}}), avec ses avantages et ses limites pour une PME, est présenté dans un guide dédié ; les étapes ci-dessous sont propres aux outils RH.
 
 1. **Lister les processus à outiller** : congés, temps, entretiens, formation, notes de frais.
 2. **Choisir le point de départ** : souvent le dossier salarié et les absences.

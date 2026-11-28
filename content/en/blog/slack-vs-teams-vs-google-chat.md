@@ -2,7 +2,7 @@
 title: "Slack, Microsoft Teams or Google Chat: which team chat app to choose?"
 translationKey: "slack-teams-google-chat"
 date: 2026-11-11T08:00:00+01:00
-lastmod: 2026-11-11T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Team chat apps: Slack, Microsoft Teams and Google Chat compared on pricing, free plan, message history and integrations."
 categories: ["Productivity and Collaboration"]
 tags: ["team chat", "Slack", "Microsoft Teams", "Google Chat", "comparison"]
@@ -136,6 +136,8 @@ Google Chat is already available in every Workspace account. It covers most of a
 Slack stands out with unlimited integrations from Pro, its Workflow Builder and channels shared with outside companies. To connect the chat app to other software, the comparison [Zapier vs Make vs n8n]({{< relref "zapier-vs-make-vs-n8n.md" >}}) helps choose the right automation tool.
 
 ## How to choose a team chat app in 5 steps
+
+These chat apps are all offered as [SaaS software]({{< relref "what-is-saas-software.md" >}}), a model whose operation and pricing are detailed in a dedicated guide.
 
 1. **Look at the office suite already in use**: Microsoft 365 or Google Workspace may already include a chat app.
 2. **Count the users** and calculate the real annual cost, commitment included.

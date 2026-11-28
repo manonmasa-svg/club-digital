@@ -2,7 +2,7 @@
 title: "What is the best HR software for a small business?"
 translationKey: "best-hr-software"
 date: 2026-11-24T08:00:00+01:00
-lastmod: 2026-11-24T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Best HR software for a small business in France: Lucca, Eurécia, Factorial and PayFit compared on pricing, modules and commitment."
 categories: ["Comparisons"]
 tags: ["HR software", "HRIS", "comparison", "small business", "leave management"]
@@ -138,6 +138,8 @@ Eurécia shows an entry price per pack of 10 users and a 30-day free trial, hand
 PayFit combines payroll production and HR features. The cost per employee is higher, but it replaces two tools and part of the administrative work.
 
 ## How to choose HR software in 5 steps
+
+How [SaaS software]({{< relref "what-is-saas-software.md" >}}) works, with its benefits and limits for a small business, is presented in a dedicated guide; the steps below are specific to HR tools.
 
 1. **List the processes to equip**: leave, time, reviews, training, expense reports.
 2. **Choose a starting point**: often employee records and absences.

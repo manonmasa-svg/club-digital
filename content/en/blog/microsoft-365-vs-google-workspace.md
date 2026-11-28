@@ -2,7 +2,7 @@
 title: "Microsoft 365 or Google Workspace: which suite to choose?"
 translationKey: "microsoft-365-vs-google-workspace"
 date: 2026-11-23T08:00:00+01:00
-lastmod: 2026-11-23T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Microsoft 365 vs Google Workspace: pricing, storage, apps and video calls compared to choose the right suite for a small business."
 categories: ["Comparisons"]
 tags: ["Microsoft 365", "Google Workspace", "office suite", "comparison", "small business"]
@@ -148,6 +148,8 @@ Microsoft 365 Business Standard remains essential for teams handling complex Exc
 Microsoft 365 Business Basic offers the lowest entry price, with 1 TB of storage. Google Workspace Business Starter costs slightly more, but offers no-commitment billing.
 
 ## How to choose your suite in 5 steps
+
+Both suites are built on the [SaaS software]({{< relref "what-is-saas-software.md" >}}) model, billed per user per month, which is presented in detail in a dedicated guide.
 
 1. **List the files and software in use**: reliance on Excel, Word templates or business tools.
 2. **Count users** and calculate the annual cost, separating introductory and standard prices.

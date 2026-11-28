@@ -2,7 +2,7 @@
 title: "What is the best email marketing tool for a small business?"
 translationKey: "best-email-marketing-tool"
 date: 2026-11-10T08:00:00+01:00
-lastmod: 2026-11-10T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Best email marketing and automation tools for small businesses: Brevo, Mailchimp, ActiveCampaign and MailerLite compared on pricing."
 categories: ["Comparisons"]
 tags: ["email marketing", "marketing automation", "comparison", "small business", "newsletter"]
@@ -152,6 +152,8 @@ ActiveCampaign offers the most advanced workflows, with predictive sending and c
 MailerLite remains simple and affordable for a list of a few hundred subscribers, with 3 users from Comfort.
 
 ## How to choose an email marketing tool in 5 steps
+
+These email marketing tools are online software: the pricing models of [SaaS software]({{< relref "what-is-saas-software.md" >}}) and the general criteria to check are covered in a dedicated guide.
 
 1. **Count your contacts and estimate your monthly sending volume**: this sets the real price.
 2. **List the workflows to automate**: welcome, follow-up, abandoned cart, birthday.

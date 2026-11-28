@@ -2,7 +2,7 @@
 title: "Quel est le meilleur CRM pour une petite entreprise ?"
 translationKey: "best-crm-small-business"
 date: 2026-10-29T08:00:00+01:00
-lastmod: 2026-11-03
+lastmod: 2026-11-28
 description: "Meilleur CRM pour petite entreprise : Axonaut, HubSpot, Pipedrive et Sellsy comparés sur les prix, l'engagement et la facturation."
 categories: ["Comparatifs"]
 tags: ["CRM", "comparatif", "TPE", "logiciel commercial", "facture électronique"]
@@ -135,6 +135,8 @@ Le CRM gratuit de HubSpot permet de structurer ses contacts sans dépense. Il fa
 Pipedrive est le plus direct pour visualiser et faire avancer un pipeline. Sellsy convient à ceux qui veulent rester sur un éditeur français et ajouter la facturation plus tard, en acceptant l'engagement de 12 mois.
 
 ## Comment choisir son CRM
+
+Un CRM en ligne reste un [logiciel SaaS]({{< relref "logiciel-saas-definition.md" >}}) facturé par abonnement, dont le fonctionnement général est expliqué dans un guide dédié.
 
 1. **Lister ce que le CRM doit faire** : suivi commercial seul, ou aussi devis, factures et comptabilité.
 2. **Calculer le coût annuel réel** pour le nombre d'utilisateurs prévu, engagement compris.

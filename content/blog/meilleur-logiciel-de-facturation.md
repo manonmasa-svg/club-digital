@@ -2,7 +2,7 @@
 title: "Quel est le meilleur logiciel de facturation ?"
 translationKey: "best-invoicing-software"
 date: 2026-11-17T08:00:00+01:00
-lastmod: 2026-11-17T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Meilleur logiciel de facturation : Abby, Evoliz et Henrri comparés sur les prix, la facture électronique et la plateforme agréée."
 categories: ["Comparatifs"]
 tags: ["logiciel de facturation", "comparatif", "facture électronique", "TPE", "indépendants"]
@@ -127,6 +127,8 @@ Abby Plus, à 15 € HT par mois, réunit facturation à la TVA, relances, signa
 Evoliz convient aux entreprises qui veulent aussi traiter leurs factures fournisseurs, payer leurs fournisseurs et suivre leur trésorerie, en préparant le travail de l'expert-comptable.
 
 ## Comment choisir son logiciel de facturation en 5 étapes
+
+Les critères communs à tout [logiciel SaaS]({{< relref "logiciel-saas-definition.md" >}}), comme la facturation par abonnement ou la réversibilité des données, sont présentés dans un guide à part ; les étapes ci-dessous portent sur la facturation.
 
 1. **Vérifier le lien avec une plateforme agréée** dans la liste officielle de la DGFiP.
 2. **Estimer le volume** de devis et factures, et le nombre d'utilisateurs.

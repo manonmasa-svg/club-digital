@@ -2,7 +2,7 @@
 title: "Microsoft 365 ou Google Workspace : quelle suite choisir ?"
 translationKey: "microsoft-365-vs-google-workspace"
 date: 2026-11-23T08:00:00+01:00
-lastmod: 2026-11-23T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Microsoft 365 ou Google Workspace : prix, stockage, applications et visioconférence comparés pour choisir la suite d'une PME."
 categories: ["Comparatifs"]
 tags: ["Microsoft 365", "Google Workspace", "suite bureautique", "comparatif", "PME"]
@@ -148,6 +148,8 @@ Microsoft 365 Business Standard reste incontournable pour les équipes qui manip
 Microsoft 365 Business Basic offre le prix d'entrée le plus bas, avec 1 To de stockage. Google Workspace Business Starter coûte un peu plus, mais propose un paiement sans engagement.
 
 ## Comment choisir sa suite en 5 étapes
+
+Les deux suites reposent sur le modèle du [logiciel SaaS]({{< relref "logiciel-saas-definition.md" >}}), facturé par utilisateur et par mois, présenté en détail dans un guide dédié.
 
 1. **Recenser les fichiers et logiciels utilisés** : dépendance à Excel, à des modèles Word, à des outils métier.
 2. **Compter les utilisateurs** et calculer le coût annuel, en séparant prix découverte et tarif standard.

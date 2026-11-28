@@ -2,7 +2,7 @@
 title: "What is the best project management tool?"
 translationKey: "best-project-management-tool"
 date: 2026-11-19T08:00:00+01:00
-lastmod: 2026-11-19T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Best project management tool: Asana, Trello, monday.com and Notion compared on pricing, free plans and Gantt views."
 categories: ["Comparisons"]
 tags: ["project management", "comparison", "productivity", "small business", "collaboration"]
@@ -133,6 +133,8 @@ Trello lets a team start for free with up to 10 collaborators, with a card-based
 Notion suits teams that want to write procedures, meeting notes and projects in the same place. monday.com will appeal to teams that want highly visual, customised boards.
 
 ## How to choose a project management tool in 5 steps
+
+The four tools compared are available online by subscription: the principles of [SaaS software]({{< relref "what-is-saas-software.md" >}}) and its billing are described in a dedicated guide.
 
 1. **List the projects and their dependencies**: simple task tracking or real planning?
 2. **Count users and guests**: free plan limits change everything.

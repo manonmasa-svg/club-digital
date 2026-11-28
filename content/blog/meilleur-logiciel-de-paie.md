@@ -2,7 +2,7 @@
 title: "Quel est le meilleur logiciel de paie pour une PME ?"
 translationKey: "best-payroll-software"
 date: 2026-11-12T08:00:00+01:00
-lastmod: 2026-11-12T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Meilleur logiciel de paie pour PME : PayFit, Sage Business Cloud Paie et EBP Paie comparés sur les prix, la DSN et l'accompagnement."
 categories: ["Comparatifs"]
 tags: ["logiciel de paie", "comparatif", "PME", "TPE", "DSN"]
@@ -130,6 +130,8 @@ PayFit reste la solution la plus simple : les bulletins sont produits par ses ex
 Sage Business Cloud Paie offre le prix d'entrée le plus bas pour une paie gérée en interne. EBP Paie Solution Autonome est une alternative sur devis.
 
 ## Comment choisir son logiciel de paie en 5 étapes
+
+Avant d'entrer dans les spécificités de la paie, les différences entre un [logiciel SaaS]({{< relref "logiciel-saas-definition.md" >}}) et un logiciel installé sont expliquées dans un guide dédié.
 
 1. **Décider qui fait la paie** : une personne de l'entreprise, l'éditeur ou un gestionnaire externe.
 2. **Calculer le coût mensuel réel** pour l'effectif actuel et prévu, abonnement et options compris.

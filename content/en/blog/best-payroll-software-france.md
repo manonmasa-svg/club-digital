@@ -2,7 +2,7 @@
 title: "What is the best payroll software in France?"
 translationKey: "best-payroll-software"
 date: 2026-11-12T08:00:00+01:00
-lastmod: 2026-11-12T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Best payroll software in France: PayFit, Sage Business Cloud Paie and EBP Paie compared on pricing, DSN filing and support."
 categories: ["Comparisons"]
 tags: ["payroll software", "comparison", "small business", "SME", "DSN"]
@@ -130,6 +130,8 @@ PayFit remains the simplest solution: its experts produce the payslips and the p
 Sage Business Cloud Paie offers the lowest entry price for payroll run in-house. EBP Paie Solution Autonome is an alternative on quotation.
 
 ## How to choose payroll software in 5 steps
+
+Before getting into payroll specifics, the differences between [SaaS software]({{< relref "what-is-saas-software.md" >}}) and installed software are explained in a dedicated guide.
 
 1. **Decide who runs payroll**: someone in the business, the vendor or an outside manager.
 2. **Calculate the real monthly cost** for current and expected headcount, flat fee and add-ons included.

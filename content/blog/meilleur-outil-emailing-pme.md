@@ -2,7 +2,7 @@
 title: "Quel est le meilleur outil d'emailing pour une PME ?"
 translationKey: "best-email-marketing-tool"
 date: 2026-11-10T08:00:00+01:00
-lastmod: 2026-11-10T08:00:00+01:00
+lastmod: 2026-11-28
 description: "Meilleurs outils d'emailing et d'automatisation pour PME : Brevo, Mailchimp, ActiveCampaign et MailerLite comparés sur les prix."
 categories: ["Comparatifs"]
 tags: ["emailing", "marketing automation", "comparatif", "PME", "newsletter"]
@@ -152,6 +152,8 @@ ActiveCampaign offre les scénarios les plus poussés, avec l'envoi prédictif e
 MailerLite reste simple et abordable pour une liste de quelques centaines d'abonnés, avec 3 utilisateurs dès Comfort.
 
 ## Comment choisir son outil d'emailing en 5 étapes
+
+Ces outils d'emailing sont des logiciels en ligne : les modèles de prix d'un [logiciel SaaS]({{< relref "logiciel-saas-definition.md" >}}) et les critères généraux à vérifier font l'objet d'un guide dédié.
 
 1. **Compter ses contacts et estimer son volume d'envoi mensuel** : c'est ce qui fixe le prix réel.
 2. **Lister les scénarios à automatiser** : bienvenue, relance, panier abandonné, anniversaire.

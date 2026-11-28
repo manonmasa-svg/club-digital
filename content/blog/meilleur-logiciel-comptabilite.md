@@ -2,7 +2,7 @@
 title: "Quel est le meilleur logiciel de comptabilité ?"
 translationKey: "best-accounting-software"
 date: 2026-10-27
-lastmod: 2026-11-03
+lastmod: 2026-11-28
 description: "Meilleur logiciel de comptabilité : Indy, Pennylane, Sage 50 et Tiime comparés : prix, déclarations et facture électronique."
 categories: ["Comparatifs"]
 tags: ["logiciel de comptabilité", "comparatif", "facture électronique", "TPE", "indépendants"]
@@ -134,6 +134,8 @@ Sage 50 répond bien à ce cas : un logiciel comptable classique, plusieurs util
 Tiime et Pennylane conviennent quand la comptabilité est tenue par un cabinet. Tiime se distingue par la gratuité de la facturation, Pennylane par ses fonctions de gestion des dépenses et de trésorerie. Il est utile de demander d'abord quel outil le cabinet utilise.
 
 ## Comment choisir son logiciel de comptabilité
+
+Comme la plupart des outils comptables actuels, ces quatre solutions fonctionnent en ligne : le fonctionnement et les modèles de prix d'un [logiciel SaaS]({{< relref "logiciel-saas-definition.md" >}}) sont détaillés dans un guide dédié.
 
 1. **Déterminer qui tient la comptabilité** : le dirigeant, un salarié ou un cabinet.
 2. **Vérifier le statut juridique couvert** : les offres d'Indy et de Pennylane varient selon le statut.

@@ -2,7 +2,7 @@
 title: "What is the best CRM for a small business?"
 translationKey: "best-crm-small-business"
 date: 2026-10-29T08:00:00+01:00
-lastmod: 2026-11-03
+lastmod: 2026-11-28
 description: "Best CRM for a small business in France: Axonaut, HubSpot, Pipedrive and Sellsy compared on price, commitment and invoicing."
 categories: ["Comparisons"]
 tags: ["CRM", "comparison", "small business", "sales software", "e-invoicing"]
@@ -135,6 +135,8 @@ HubSpot's free CRM makes it possible to organise contacts at no cost. A separate
 Pipedrive is the most direct way to visualise and move a pipeline forward. Sellsy suits those who want to stay with a French vendor and add invoicing later, accepting the 12-month commitment.
 
 ## How to choose your CRM
+
+An online CRM is still [SaaS software]({{< relref "what-is-saas-software.md" >}}) billed by subscription, and how it works in general is explained in a dedicated guide.
 
 1. **List what the CRM must do**: sales tracking only, or also quotes, invoices and accounting.
 2. **Calculate the real annual cost** for the planned number of users, commitment included.
